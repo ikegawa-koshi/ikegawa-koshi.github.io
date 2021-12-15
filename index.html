@@ -3,114 +3,112 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="池川航史">
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
 
   <title>池川航史 - Koshi IKEGAWA</title>
 
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
   <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
-  <style type="text/css">
-    body {
-      padding-top: 80px;
-    }
 
-    @media ( min-width: 768px) {
-      #banner {
-        min-height: 300px;
-        border-bottom: none;
-      }
-      .bs-docs-section {
-        margin-top: 8em;
-      }
-      .bs-component {
-        position: relative;
-      }
-      .bs-component .modal {
-        position: relative;
-        top: auto;
-        right: auto;
-        left: auto;
-        bottom: auto;
-        z-index: 1;
-        display: block;
-      }
-      .bs-component .modal-dialog {
-        width: 90%;
-      }
-      .bs-component .popover {
-        position: relative;
-        display: inline-block;
-        width: 220px;
-        margin: 20px;
-      }
-      .nav-tabs {
-        margin-bottom: 15px;
-      }
-      .progress {
-        margin-bottom: 10px;
-      }
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <style type="text/css">
+  .bs-component + .bs-component {
+    margin-top: 1rem;
+  }
+  @media (min-width: 768px) {
+    .bs-docs-section {
+      margin-top: 8em;
     }
+    .bs-component {
+      position: relative;
+    }
+    .bs-component .modal {
+      position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      z-index: 1;
+      display: block;
+    }
+    .bs-component .modal-dialog {
+      width: 90%;
+    }
+    .bs-component .popover {
+      position: relative;
+      display: inline-block;
+      width: 220px;
+      margin: 20px;
+    }
+    .nav-tabs {
+      margin-bottom: 15px;
+    }
+    .progress {
+      margin-bottom: 10px;
+    }
+  }
   </style>
 </head>
 
 <body>
+
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Koshi Ikegawa Portfolio</a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarEexample">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="active">
-                    <a href="#">日本語／Japanese</a>
-                  </li>
-                  <li class="nonactive">
-                    <a href="./index-en.html">英語／English</a>
-                  </li>
-                </ul>
-              </li>
-          </div>
-        </div>
+        <a class="navbar-brand" href="./">
+          Koshi Ikegawa Portfolio
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./">Top <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Live demo
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./bootstrap-ja.html">Japanese Page</a>
+                <a class="dropdown-item" href="./bootstrap.html">English Page</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://github.com/windyakin/Honoka/releases">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://github.com/windyakin/Honoka/wiki">Wiki</a>
+            </li>
+          </ul>
+        </div> -->
       </div>
     </nav>
   </header>
 
+
   <div class="container">
     <h1>
-      <big>池川航史</big>
+      池川航史
       <small> - Koshi IKEGAWA</small>
     </h1>
-    <hr>
+
     <div class="row">
-      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-7">
-        <br />
-        <img src="img/ikegawa.jpg" class="img-responsive img-rounded" alt="">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-6">
+        <img src="img/ikegawa.jpg" class="img-fluid" alt="Responsive image">
+        <!-- <img src="img/ikegawa.jpg" class="img-responsive img-rounded" alt=""> -->
       </div>
-      <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
-        <h2>所属</h2>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12">
+        <h3>所属</h3>
         <ul style="list-style:none;">
           <li>株式会社日立製作所 研究開発グループ</li>
         </ul>
         <hr>
 
-        <h2>連絡先・その他アカウント</h2>
+        <h3>連絡先・その他アカウント</h3>
         <ul style="list-style:none;">
           <li><a href="https://www.twitter.com/koshi_ikegawa">
             <img src="icon/twitter.png" alt="" height=16> Twitter</a></li>
@@ -195,34 +193,6 @@
           <br /><a href="./papers/yoshida_j_wiss2017.pdf"><b>静電容量に基づくブロックシステム</b></a>.
           <br />日本ソフトウェア科学会, コンピュータ ソフトウェア Vol.34 (2017) No.2, 2017年05月, pp. 2_93-2_101, 9 pages.
           <br />
-          <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#jwiss_yoshida_2017">BibTex</button>
-          <div class="modal fade" id="jwiss_yoshida_2017" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">静電容量に基づくブロックシステム</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    @article{yoshida_jwiss_2017,
-                    <br />title={静電容量に基づくブロックシステム},
-                    <br />author={吉田 有花 and 鶴田 真也 and 池川 航史 and 阿部 哲也 and 志築 文太郎 and 田中 二郎},
-                    <br />journal={コンピュータ ソフトウェア},
-                    <br />volume={34},
-                    <br />number={2},
-                    <br />pages={2_93--2_101},
-                    <br />year={2017},
-                    <br />doi={10.11309/jssst.34.2_93}
-                    <br />}
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="./papers/yoshida_j_wiss2017.pdf">
             <img src="icon/pdf.png" alt="" height=20>
           </a>
@@ -239,41 +209,6 @@
           <a href="./papers/ikegawa_ozchi2018.pdf"><b>Tesla Blocks: Magnetism-Based Tangible 3D Modeling System using Block-Shaped Objects</b></a>.
           <br />In Proceedings of the 30th Australian Conference on Human-Computer Interaction (OzCHI 2018), ACM, December 2018, pp. 411-415.
           <br />
-          <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#ikegawa_ozchi2018">BibTex</button>
-          <div class="modal fade" id="ikegawa_ozchi2018" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Tesla Blocks: Magnetism-Based Tangible 3D Modeling System using Block-Shaped Objects</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    @inproceedings{Ikegawa:2018:TBM:3292147.3292221,
-                      <br />author = {Ikegawa, Koshi and Shizuki, Buntarou},
-                      <br />title = {Tesla Blocks: Magnetism-based Tangible 3D Modeling System using Block-shaped Objects},
-                      <br />booktitle = {Proceedings of the 30th Australian Conference on Computer-Human <br />Interaction},
-                      <br />series = {OzCHI '18},
-                      <br />year = {2018},
-                      <br />isbn = {978-1-4503-6188-0},
-                      <br />location = {Melbourne, Australia},
-                      <br />pages = {411--415},
-                      <br />numpages = {5},
-                      <br />url = {http://doi.acm.org/10.1145/3292147.3292221},
-                      <br />doi = {10.1145/3292147.3292221},
-                      <br />acmid = {3292221},
-                      <br />publisher = {ACM},
-                      <br />address = {New York, NY, USA},
-                      <br />keywords = {3D modeling, building block, tangible user interface},
-                    <br />}
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="./papers/ikegawa_ozchi2018.pdf">
             <img src="icon/pdf.png" alt="" height=20>
           </a>
@@ -288,34 +223,6 @@
           <br />In Proceedings of the 20th International Conference on HIMI 2018, Held as Part of HCI International 2018 (HCII 2018), Part
           I, LNCS 10904, Springer, July 2018, pp. 490-504.
           <br />
-          <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#heatmap_hcii2018">BibTex</button>
-          <div class="modal fade" id="heatmap_hcii2018" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Investigating Effects of Users' Background in Analyzing Long-Term Images from a Stationary Camera</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    @InProceedings{10.1007/978-3-319-92043-6_41,
-                    <br/>author="Ikegawa, Koshi and Ishii, Akira and Okamura, Kazunori and Shizuki, Buntarou and Takahashi, Shin",
-                    <br/>editor="Yamamoto, Sakae and Mori, Hirohiko",
-                    <br/>title="Investigating Effects of Users' Background in Analyzing Long-Term Images from a Stationary Camera",
-                    <br/>booktitle="Human Interface and the Management of Information. Interaction, Visualization, and Analytics",
-                    <br/>year="2018",
-                    <br/>publisher="Springer International Publishing",
-                    <br/>address="Cham",
-                    <br/>pages="490--504",
-                    <br/>}
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="./papers/heatmap_hcii2018.pdf">
             <img src="icon/pdf.png" alt="" height=20>
           </a>
@@ -331,66 +238,14 @@
           <br /><a href="./papers/funakoshi_asianchi2019.pdf"><b>Capacitance- and Phase-Based Detection Technique of Finger Bend and Touched Hand Using Ring-Shaped Device</b></a>.
           <br />CHI 2019 symposia on Asian CHI Symposium: Emerging HCI Research Collection, May 2019, pp. xxx--xxx.
           <br />
-          <span class="label label-warning">To appear</span>
-          <!-- <span class="label label-default">Unpublished</span> -->
-          <!-- <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#funakoshi_asianchi2019">BibTex</button>
-          <div class="modal fade" id="funakoshi_asianchi2019" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Capacitance- and Phase-Based Detection Technique of Finger Bend and Touched Hand Using Ring-Shaped Device</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- <a href="./papers/funakoshi_asianchi2019.pdf">
-            <img src="icon/pdf.png" alt="" height=20>
-          </a> -->
-          <!-- <a href="https://dl.acm.org/citation.cfm?id=3173285">
-            <img src="icon/acm_dl.png" alt="" width=20 height=20>
-          </a> -->
+          <span class="badge badge-warning">To appear</span>
         </li>
         <li>
           Takuto Nakamura, <b><u>Koshi Ikegawa</u></b>, Shogo Tsuchikiri, Keita Saito, Kazushi Kamezawa, Yuki Hashimoto, and Buntarou Shizuki.
           <br /><a href="./papers/urushi_asianchi2019.pdf"><b>Touch Interface Design System in Multilayered Urushi Circuit</b></a>.
           <br />CHI 2019 symposia on Asian CHI Symposium: Emerging HCI Research Collection, May 2019, pp. xxx--xxx.
           <br />
-          <span class="label label-warning">To appear</span>
-          <!-- <span class="label label-default">Unpublished</span> -->
-          <!-- <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#urushi_asianchi2019">BibTex</button>
-          <div class="modal fade" id="urushi_asianchi2019" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Touch Interface Design System in Multilayered Urushi Circuit</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- <a href="./papers/urushi_asianchi2019.pdf">
-            <img src="icon/pdf.png" alt="" height=20>
-          </a> -->
-          <!-- <a href="https://dl.acm.org/citation.cfm?id=3173285">
-            <img src="icon/acm_dl.png" alt="" width=20 height=20>
-          </a> -->
+          <span class="badge badge-warning">To appear</span>
         </li>
         <li>
           <b><u>Koshi Ikegawa</u></b>, Shuhei Aoyama, Shogo Tsuchikiri, Takuto Nakamura, Yuki Hashimoto, and Buntarou Shizuki.
@@ -398,43 +253,6 @@
           <br />In Proceedings of the 12th International Conference on Tangible, Embedded, and Embodied Interaction (TEI 2018),
           ACM, March 2018, pp. 115-122.
           <br />
-          <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#urushi_tei2018wip">BibTex</button>
-          <div class="modal fade" id="urushi_tei2018wip" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Investigation of Touch Interfaces Using Multilayered Urushi Circuit</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    @inproceedings{Ikegawa:2018:ITI:3173225.3173285,
-                    <br />author = {Ikegawa, Koshi and Aoyama, Shuhei and Tsuchikiri, Shogo and Nakamura, Takuto and Hashimoto,
-                    Yuki and Shizuki, Buntarou},
-                    <br />title = {Investigation of Touch Interfaces Using Multilayered Urushi Circuit},
-                    <br />booktitle = {Proceedings of the Twelfth International Conference on Tangible, Embedded, and Embodied
-                    Interaction},
-                    <br />series = {TEI '18},
-                    <br />year = {2018},
-                    <br />isbn = {978-1-4503-5568-1},
-                    <br />location = {Stockholm, Sweden},
-                    <br />pages = {115--122},
-                    <br />numpages = {8},
-                    <br />url = {http://doi.acm.org/10.1145/3173225.3173285},
-                    <br />doi = {10.1145/3173225.3173285},
-                    <br />acmid = {3173285},
-                    <br />publisher = {ACM},
-                    <br />address = {New York, NY, USA},
-                    <br />keywords = {fabrication, japanese lacquer, lacquerware, traditional japanese craft, visual design},
-                    <br />}
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="./papers/urushi_tei2018wip.pdf">
             <img src="icon/pdf.png" alt="" height=20>
           </a>
@@ -450,33 +268,6 @@
           </a>.
           <br />CHI 2017 symposia on Asian CHI Symposium: Emerging HCI Research Collection, May 2017, 8 pages.
           <br />
-          <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#ikegawa_asian_chi2017">BibTex</button>
-          <div class="modal fade" id="ikegawa_asian_chi2017" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">A Block System with Magnetism-based Structure Recognition</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    @inproceedings{Ikegawa_AsianCHI_2017,
-                    <br />author = {Ikegawa, Koshi and Nakamae, Shuta and Shizuki, Buntarou},
-                    <br />title = {A Block System with Magnetism-based Structure Recognition},
-                    <br />booktitle = {Proceedings of the 2017 ACM CHI Symposium on Emerging Japanese HCI Research Collection},
-                    <br />series = {CHI '17 Asian CHI Symposium},
-                    <br />year = {2017},
-                    <br />location = {Denver, Colorado, USA},
-                    <br />numpages = {8},
-                    <br />}
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="./papers/ikegawa_asian_chi2017.pdf">
             <img src="icon/pdf.png" alt="" height=20>
           </a>
@@ -486,42 +277,6 @@
           <br /><a href="./papers/block_iss2016_light.pdf"><b>Lightweight Capacitance-based Block System for 3D Space Interaction</b></a>.
           <br />In Proceedings of the 2016 ACM on Interactive Surfaces and Spaces (ISS 2016), ACM, November 2016, pp. 307-312.
           <br />
-          <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#block_iss2016">BibTex</button>
-          <div class="modal fade" id="block_iss2016" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Lightweight Capacitance-based Block System for 3D Space Interaction</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    @inproceedings{Ikegawa:2016:LCB:2992154.2996772,
-                    <br />author = {Ikegawa, Koshi and Tsuruta, Masaya and Abe, Tetsuya and Yoshida, Arika and Shizuki, Buntarou
-                    and Takahashi, Shin},
-                    <br />title = {Lightweight Capacitance-based Block System for 3D Space Interaction},
-                    <br />booktitle = {Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces},
-                    <br />series = {ISS '16},
-                    <br />year = {2016},
-                    <br />isbn = {978-1-4503-4248-3},
-                    <br />location = {Niagara Falls, Ontario, Canada},
-                    <br />pages = {307--312},
-                    <br />numpages = {6},
-                    <br />url = {http://doi.acm.org/10.1145/2992154.2996772},
-                    <br />doi = {10.1145/2992154.2996772},
-                    <br />acmid = {2996772},
-                    <br />publisher = {ACM},
-                    <br />address = {New York, NY, USA},
-                    <br />keywords = {3d modeling, building block, computational devices, interactive devices, stacking, tangible},
-                    <br />}
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="./papers/block_iss2016_light.pdf">
             <img src="icon/pdf.png" alt="" height=20>
           </a>
@@ -537,38 +292,8 @@
           <br /><a href="./papers/mnagai_wiss2017.pdf"><b>日本語フリック入力を用いたモバイル端末の把持姿勢識別</b></a>.
           <br />第25回インタラクティブシステムとソフトウェアに関するワークショップ論文集 (WISS 2017), 日本ソフトウェア科学会, 2017年12月, pp. 113-118.
           <br />
-          <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#mnagai_wiss2017">BibTex</button>
-          <div class="modal fade" id="mnagai_wiss2017" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">日本語フリック入力を用いたモバイル端末の把持姿勢識別</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    @inproceedings{nagai_wiss_2017,
-                    <br />title={日本語フリック入力を用いたモバイル端末の把持姿勢識別},
-                    <br />author={永井 美波 and 池川 航史 and 志築 文太郎 and 高橋 伸},
-                    <br />booktitle={第25回インタラクティブシステムとソフトウェアに関するワークショップ論文集},
-                    <br />series = {WISS '17},
-                    <br />pages={113--118},
-                    <br />year={2017},
-                    <br />publisher={日本ソフトウェア科学会}
-                    <br />}
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="./papers/mnagai_wiss2017.pdf">
             <img src="icon/pdf.png" alt="" height=20>
-          </a>
-          <a href="http://www.wiss.org/WISS2017/Program.html">
-            <img src="icon/wiss.png" alt="" height=20>
           </a>
         </li>
       </ol>
@@ -578,7 +303,7 @@
           <b><u>Koshi Ikegawa</u></b>, Nao Nishijima, Yoji Ozawa, Katsuhiro Fukunaka, Hironori Emaru, Masaru Hisada, Akihito Kaneko, Eiichi Araki, Ai Okada and Yuichi Shiraishi
           <br /><b>Secure and Traceable System for Genomic Data Sharing Using Hyperledger Fabric Blockchain</b>.
           <br />2020年日本バイオインフォマティクス学会年会 第9回 生命医薬情報学連合大会 (IIBMP2020), 2020年09月.
-          <br /><span class="label label-default">Unpublished</span>
+          <br /><span class="badge badge-secondary">Unpublished</span>
           </a>
         </li>
         <li>
@@ -586,32 +311,6 @@
           <br /><b>位相に基づく指輪型入力デバイスの検討</b>.
           <br />情報処理学会研究報告, Vol.2018-HCI-182, No. 34, 6 pages, 2018年8月, 情報処理学会, 2019年03月.
           <br />
-          <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#funakoshi_hci182">BibTex</button>
-          <div class="modal fade" id="funakoshi_hci182" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">位相に基づく指輪型入力デバイスの検討</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    @inproceedings{funakoshi_hci182,
-                    <br />title={位相に基づく指輪型入力デバイスの検討},
-                    <br />author={船越 南斗 and 池川 航史 and 志築 文太郎 and 高橋 伸},
-                    <br />booktitle={情報処理学会研究報告},
-                    <br />pages={707--711},
-                    <br />year={2018},
-                    <br />publisher={情報処理学会}
-                    <br />}
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="./papers/funakoshi_hci182.pdf">
             <img src="icon/pdf.png" alt="" height=20>
           </a>
@@ -625,39 +324,13 @@
           <br />第26回インタラクティブシステムとソフトウェアに関するワークショップ論文集 (WISS 2018), 予稿なしデモ・ポスター, 日本ソフトウェア科学会, 2018年09月.
           <br />
           <!-- <span class="label label-warning">To appear</span> -->
-          <span class="label label-default">Unpublished</span>
+          <span class="badge badge-secondary">Unpublished</span>
         </li>
         <li>
           <b><u>池川航史</u></b>, 中前秀太, 志築文太郎.
           <br /><a href="./papers/ikegawa_interaction2017.pdf"><b>磁気計測に基づき構造認識を行うブロックシステム</b></a>.
           <br />インタラクション2017論文集, 情報処理学会, 2017年02月, pp. 707-711.
           <br />
-          <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#ikegawa_interaction2017">BibTex</button>
-          <div class="modal fade" id="ikegawa_interaction2017" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">磁気計測に基づき構造認識を行うブロックシステム</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                    @inproceedings{ikegawa_interaction_2017,
-                    <br />title={磁気計測に基づき構造認識を行うブロックシステム},
-                    <br />author={池川 航史 and 中前 秀太 and 志築 文太郎},
-                    <br />booktitle={インタラクション2017論文集},
-                    <br />pages={707--711},
-                    <br />year={2017},
-                    <br />publisher={情報処理学会}
-                    <br />}
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="./papers/ikegawa_interaction2017.pdf">
             <img src="icon/pdf.png" alt="" height=20>
           </a>
@@ -670,7 +343,7 @@
           <br /><b>遺伝的アルゴリズムにより設計した周波数選択板によるマイクロストリップアンテナの利得向上効果に関する研究</b>.
           <br />電子情報通信学会 北陸支部 平成26年度学生による研究発表会, 電子情報通信学会, 2015年03月, 1 page.
           <br />
-          <span class="label label-default">Unpublished</span>
+          <span class="badge badge-secondary">Unpublished</span>
         </li>
       </ol>
       <h3>学位論文</h3>
@@ -679,21 +352,21 @@
             修士論文
             <br /><b>ブロック構造物に対する磁気計測に基づく構造認識およびその3Dモデリングシステムへの応用</b>
             <br />筑波大学 システム情報工学研究科 コンピュータサイエンス専攻, 2019年01月, 73 pages
-            <br /><span class="label label-default">Unpublished</span>
+            <br /><span class="badge badge-secondary">Unpublished</span>
         </li>
         <li>
           学士論文
           <br />
           <b>磁気計測に基づくブロック型タンジブルユーザインタフェース</b>
           <br />筑波大学 情報学群 情報メディア創成学類, 2017年01月, 42 pages.
-          <br /><span class="label label-default">Unpublished</span>
+          <br /><span class="badge badge-secondary">Unpublished</span>
         </li>
         <li>
           準学士論文
           <br />
           <b>遺伝的アルゴリズムにより設計した周波数選択板によるマイクロストリップアンテナの利得向上効果に関する研究</b>
           <br />福井工業高等専門学校 電子情報工学科, 2015年03月, 35 pages.
-          <br /><span class="label label-default">Unpublished</span>
+          <br /><span class="badge badge-secondary">Unpublished</span>
         </li>
       </ol>
       <hr>
@@ -937,10 +610,14 @@
       <h2>資格・免許</h2>
       <ol>
         <li>
-          <a href="https://www.credly.com/badges/aa0ed410-6b6b-4fb4-9aa4-f94a2a843b85/public_url">CHFA: Certified Hyperledger Fabric Administrator Issued</a> by The Linux Foundation
+          The Linux Foundation
+          <br /><a href="https://www.credly.com/badges/aa0ed410-6b6b-4fb4-9aa4-f94a2a843b85/public_url">CHFA: Certified Hyperledger Fabric Administrator</a>
+          <br />Issued on 23 October 2020. (Expires on 24 October 2023.)
         </li>
         <li>
-          IPA 基本情報技術者試験 合格, 2013年05月20日.
+          IPA 独立行政法人 情報処理推進機構
+          <br />基本情報技術者試験(FE) 合格
+          2013年05月20日.
         </li>
         <!-- <li>
           普通自動車第一種運転免許 取得, 2012年09月18日.
