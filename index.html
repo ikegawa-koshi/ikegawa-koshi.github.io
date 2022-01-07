@@ -587,8 +587,7 @@
           <ol>
             <li>
               The Linux Foundation, <a href="https://www.credly.com/badges/aa0ed410-6b6b-4fb4-9aa4-f94a2a843b85/public_url"><b>Certified Hyperledger Fabric Administrator (CHFA)</b></a>.
-              <br />2020年10月23日（3年間有効：2023年10月24日失効）
-              <!-- <br />Issued on 23 October 2020 (Expires on 24 October 2023). -->
+              <br />2020年10月23日（3年間有効：2023年10月24日失効予定）.
             </li>
             <li>
               IPA 独立行政法人 情報処理推進機構, <b>基本情報技術者試験(FE) 合格</b>.
@@ -617,7 +616,7 @@
           <ul>
             <li>
               2015年07月~2016年03月｜株式会社BearTail アルバイト.
-              <br /> - Objective-C/Swiftを用いたiOSアプリケーション開発（アプリケーション）
+              <br /> - Objective-C/Swiftを用いたiOSアプリケーション開発（モバイルアプリケーション）
             </li>
             <li>
               2016年02月~2016年03月｜株式会社アクセル インターンシップ.
@@ -635,7 +634,35 @@
 
           <hr>
           <div class="text-right">
-            （最終更新日：2021/12/21）
+            <script type="text/javascript">
+
+              var weeks = new Array('日','月','火','水','木','金','土');
+
+              var lastup = new Date(document.lastModified);
+
+              var year = lastup.getYear(); // 年
+              var month = lastup.getMonth() + 1; // 月
+              var day = lastup.getDate(); // 日
+              var week = weeks[ lastup.getDay() ]; // 曜日
+              var hour = lastup.getHours(); // 時
+              var min = lastup.getMinutes(); // 分
+              var sec = lastup.getSeconds(); // 秒
+
+              if(year < 2000) { year += 1900; }
+
+              // 数値が1桁の場合、頭に0を付けて2桁で表示する指定
+              if(month < 10) { month = "0" + month; }
+              if(day < 10) { day = "0" + day; }
+              if(hour < 10) { hour = "0" + hour; }
+              if(min < 10) { min = "0" + min; }
+              if(sec < 10) { sec = "0" + sec; }
+
+              // 表示開始
+              document.write('更新日時：<b>' + year + '年' + month + '月' + day + '日（' + week + '）');
+              document.write(hour + '時' + min + '分' + sec + '秒</b>');
+              // 表示終了
+
+            </script>
           </div>
 
           <hr>
