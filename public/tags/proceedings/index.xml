@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Proceedings | Koshi Ikegawa</title>
-    <link>http://localhost:60951/tags/proceedings/</link>
-      <atom:link href="http://localhost:60951/tags/proceedings/index.xml" rel="self" type="application/rss+xml" />
+    <title>Proceedings | 池川航史</title>
+    <link>http://localhost:1313/tags/proceedings/</link>
+      <atom:link href="http://localhost:1313/tags/proceedings/index.xml" rel="self" type="application/rss+xml" />
     <description>Proceedings</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:60951/media/icon_hu_8e1b8a398c26e1fd.png</url>
+      <url>http://localhost:1313/media/icon_hu_8e1b8a398c26e1fd.png</url>
       <title>Proceedings</title>
-      <link>http://localhost:60951/tags/proceedings/</link>
+      <link>http://localhost:1313/tags/proceedings/</link>
     </image>
     
     <item>
       <title>Tesla Blocks: Magnetism-Based Tangible 3D Modeling System using Block-Shaped Objects</title>
-      <link>http://localhost:60951/publication/proc_2018_ozchi/</link>
+      <link>http://localhost:1313/publication/proc_2018_ozchi/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/proc_2018_ozchi/</guid>
+      <guid>http://localhost:1313/publication/proc_2018_ozchi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Investigating Effects of Users’ Background in Analyzing Long-Term Images from a Stationary Camera.</title>
-      <link>http://localhost:60951/publication/proc_2018_hcii/</link>
+      <link>http://localhost:1313/publication/proc_2018_hcii/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/proc_2018_hcii/</guid>
+      <guid>http://localhost:1313/publication/proc_2018_hcii/</guid>
       <description></description>
     </item>
     

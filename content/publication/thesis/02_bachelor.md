@@ -19,10 +19,22 @@ doi: ""
 publication_types: ["thesis"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "筑波大学 情報学群 情報メディア創成学類"
 publication_short: ""
 
-# abstract:
+abstract: "磁気を計測することによって，ユーザが作製した構造物の構造を認識し，3D モデルを構築
+するブロック型タンジブルユーザインタフェースの実現手法を示す．ブロック型タンジブル
+ユーザインタフェースは，ブロックを組み立てるという直感的な操作を用いた3D モデリング
+を可能にする．本システムのブロックは永久磁石を内蔵するのみの単純な構造を持つため，ブ
+ロック内に追加の回路や電源を必要としない．また，構造の認識に用いる電子回路は，ユー
+ザが構造物を作製する土台に統合されているため，カメラを用いるシステムと比較し，小型
+なシステムを実現した．
+本論文にて，Tesla Blocks を構成する磁気ブロック，構造物認識ハードウェア，ならびに3D
+モデルビューアの実装を述べる．また，実装したシステムが認識可能な構造物の規模を調査
+した結果を述べる．結果，ブロックを用いて作製した構造物の底面が最大で2 行2 列とした
+場合において実験を行った結果，高さ4 まではシステムは正しく認識し，高さ5 においては
+誤認識が多くなった．3 行3 列とした場合において，実験を行った結果，高さ2 まではシステ
+ムは正しく認識し，高さ3 においてはシステムの処理が重くなり，動作しなくなった．"
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.

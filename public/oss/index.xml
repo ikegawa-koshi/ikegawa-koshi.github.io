@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OSS貢献活動 | Koshi Ikegawa</title>
-    <link>http://localhost:60951/oss/</link>
-      <atom:link href="http://localhost:60951/oss/index.xml" rel="self" type="application/rss+xml" />
-    <description>OSS貢献活動</description>
+    <title>OSS貢献 | 池川航史</title>
+    <link>http://localhost:1313/oss/</link>
+      <atom:link href="http://localhost:1313/oss/index.xml" rel="self" type="application/rss+xml" />
+    <description>OSS貢献</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:60951/media/icon_hu_8e1b8a398c26e1fd.png</url>
-      <title>OSS貢献活動</title>
-      <link>http://localhost:60951/oss/</link>
+      <url>http://localhost:1313/media/icon_hu_8e1b8a398c26e1fd.png</url>
+      <title>OSS貢献</title>
+      <link>http://localhost:1313/oss/</link>
     </image>
     
     <item>
       <title>Web3 and Sustainability [Web3とサステナビリティ]</title>
-      <link>http://localhost:60951/oss/translation/2023translation/</link>
+      <link>http://localhost:1313/oss/translation/2023translation/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/oss/translation/2023translation/</guid>
+      <guid>http://localhost:1313/oss/translation/2023translation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demo: Infrastructure for Managing, Sharing, and Utilizing Sensitive Data using Hyperledger Fabric Private Chaincode Running on Microsoft Azure.</title>
-      <link>http://localhost:60951/oss/speech/2022_hlgf2022/</link>
+      <link>http://localhost:1313/oss/speech/2022_hlgf2022/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/oss/speech/2022_hlgf2022/</guid>
+      <guid>http://localhost:1313/oss/speech/2022_hlgf2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web3 and Sustainability [Web3とサステナビリティ]</title>
-      <link>http://localhost:60951/oss/translation/2022translation/</link>
+      <link>http://localhost:1313/oss/translation/2022translation/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/oss/translation/2022translation/</guid>
+      <guid>http://localhost:1313/oss/translation/2022translation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Trust Data Sharing and Utilization Infrastructure for Sensitive Data Using Hyperledger Projects</title>
-      <link>http://localhost:60951/oss/speech/2021_ossj2021/</link>
+      <link>http://localhost:1313/oss/speech/2021_ossj2021/</link>
       <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/oss/speech/2021_ossj2021/</guid>
+      <guid>http://localhost:1313/oss/speech/2021_ossj2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Trust Data Sharing and Utilization Infrastructure for Sensitive Data using Hyperledger Avalon</title>
-      <link>http://localhost:60951/oss/speech/2021_hlgf2021/</link>
+      <link>http://localhost:1313/oss/speech/2021_hlgf2021/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/oss/speech/2021_hlgf2021/</guid>
+      <guid>http://localhost:1313/oss/speech/2021_hlgf2021/</guid>
       <description></description>
     </item>
     

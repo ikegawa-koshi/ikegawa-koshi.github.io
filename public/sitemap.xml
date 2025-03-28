@@ -2,219 +2,171 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:60951/event/example/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/event/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/publication_types/article-journal/</loc>
+    <loc>http://localhost:1313/publication_types/article-journal/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/tags/journal/</loc>
+    <loc>http://localhost:1313/tags/journal/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication_types/</loc>
+    <loc>http://localhost:1313/publication_types/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/</loc>
+    <loc>http://localhost:1313/publication/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/journal_2025-ipsj-dp/</loc>
+    <loc>http://localhost:1313/publication/journal_2025-ipsj-dp/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/post/get-started/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/tags/academic/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/post/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/tags/hugo-blox/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/tags/markdown/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/tags/second-brain/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/post/second-brain/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/post/data-visualization/</loc>
-    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/tags/hugo/</loc>
-    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/post/teach-courses/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/tags/hugo-blox-builder/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/post/project-management/</loc>
-    <lastmod>2023-10-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:60951/patents/2022/</loc>
+    <loc>http://localhost:1313/patents/2022/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication_types/patent/</loc>
+    <loc>http://localhost:1313/publication_types/patent/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/tags/patent/</loc>
+    <loc>http://localhost:1313/tags/patent/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/patents/</loc>
+    <loc>http://localhost:1313/patents/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/patents/2023/</loc>
+    <loc>http://localhost:1313/patents/2023/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/oss/</loc>
+    <loc>http://localhost:1313/oss/</loc>
     <lastmod>2023-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication_types/speech/</loc>
+    <loc>http://localhost:1313/publication_types/speech/</loc>
     <lastmod>2023-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/tags/translation/</loc>
+    <loc>http://localhost:1313/tags/translation/</loc>
     <lastmod>2023-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/oss/translation/2023translation/</loc>
+    <loc>http://localhost:1313/oss/translation/2023translation/</loc>
     <lastmod>2023-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/journal_2022-ieice-d/</loc>
+    <loc>http://localhost:1313/publication/journal_2022-ieice-d/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/oss/speech/2022_hlgf2022/</loc>
+    <loc>http://localhost:1313/oss/speech/2022_hlgf2022/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/tags/speech/</loc>
+    <loc>http://localhost:1313/tags/speech/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/oss/translation/2022translation/</loc>
+    <loc>http://localhost:1313/oss/translation/2022translation/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/oss/speech/2021_ossj2021/</loc>
+    <loc>http://localhost:1313/oss/speech/2021_ossj2021/</loc>
     <lastmod>2021-12-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/oss/speech/2021_hlgf2021/</loc>
+    <loc>http://localhost:1313/oss/speech/2021_hlgf2021/</loc>
     <lastmod>2021-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/patents/2021/</loc>
+    <loc>http://localhost:1313/patents/2021/</loc>
     <lastmod>2021-05-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/tags/misc/</loc>
+    <loc>http://localhost:1313/tags/misc/</loc>
     <lastmod>2020-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/misc/01_associate/</loc>
+    <loc>http://localhost:1313/publication/misc/01_associate/</loc>
     <lastmod>2020-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication_types/thesis/</loc>
+    <loc>http://localhost:1313/publication_types/thesis/</loc>
     <lastmod>2020-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/patents/2020/</loc>
+    <loc>http://localhost:1313/patents/2020/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/tags/thesis/</loc>
+    <loc>http://localhost:1313/tags/thesis/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/thesis/03_master/</loc>
+    <loc>http://localhost:1313/publication/thesis/03_master/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication_types/paper-conference/</loc>
+    <loc>http://localhost:1313/publication_types/paper-conference/</loc>
     <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/tags/proceedings/</loc>
+    <loc>http://localhost:1313/tags/proceedings/</loc>
     <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/proc_2018_ozchi/</loc>
+    <loc>http://localhost:1313/publication/proc_2018_ozchi/</loc>
     <lastmod>2018-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/proc_2018_hcii/</loc>
+    <loc>http://localhost:1313/publication/proc_2018_hcii/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/poster_2018_tei/</loc>
+    <loc>http://localhost:1313/publication/poster_2018_tei/</loc>
     <lastmod>2018-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/tags/poster/</loc>
+    <loc>http://localhost:1313/tags/poster/</loc>
     <lastmod>2018-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/journal_2017-jssst/</loc>
+    <loc>http://localhost:1313/tags/jproc/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication/jproc_2017_wiss_nagai/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/publication/journal_2017-jssst/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/thesis/02_bachelor/</loc>
+    <loc>http://localhost:1313/publication/thesis/02_bachelor/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/poster_2016_iss/</loc>
+    <loc>http://localhost:1313/publication/poster_2016_iss/</loc>
     <lastmod>2016-11-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/publication/thesis/01_associate/</loc>
+    <loc>http://localhost:1313/publication/thesis/01_associate/</loc>
     <lastmod>2015-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:60951/experience/</loc>
+    <loc>http://localhost:1313/experience/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

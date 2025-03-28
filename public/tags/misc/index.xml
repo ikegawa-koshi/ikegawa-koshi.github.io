@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Misc | Koshi Ikegawa</title>
-    <link>http://localhost:60951/tags/misc/</link>
-      <atom:link href="http://localhost:60951/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <title>Misc | 池川航史</title>
+    <link>http://localhost:1313/tags/misc/</link>
+      <atom:link href="http://localhost:1313/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     <description>Misc</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:60951/media/icon_hu_8e1b8a398c26e1fd.png</url>
+      <url>http://localhost:1313/media/icon_hu_8e1b8a398c26e1fd.png</url>
       <title>Misc</title>
-      <link>http://localhost:60951/tags/misc/</link>
+      <link>http://localhost:1313/tags/misc/</link>
     </image>
     
     <item>
       <title>Secure and Traceable System for Genomic Data Sharing Using Hyperledger Fabric Blockchain</title>
-      <link>http://localhost:60951/publication/misc/01_associate/</link>
+      <link>http://localhost:1313/publication/misc/01_associate/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/misc/01_associate/</guid>
+      <guid>http://localhost:1313/publication/misc/01_associate/</guid>
       <description>&lt;!-- 
 
 

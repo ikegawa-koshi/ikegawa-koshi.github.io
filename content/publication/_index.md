@@ -55,7 +55,7 @@ sections:
       filters:
         folders:
           - publication
-        tag: "japan_proceedings"
+        tag: "jproc"
         exclude_featured: false
     design:
       view: citation

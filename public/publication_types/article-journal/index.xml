@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Article-Journal | Koshi Ikegawa</title>
-    <link>http://localhost:60951/publication_types/article-journal/</link>
-      <atom:link href="http://localhost:60951/publication_types/article-journal/index.xml" rel="self" type="application/rss+xml" />
+    <title>Article-Journal | 池川航史</title>
+    <link>http://localhost:1313/publication_types/article-journal/</link>
+      <atom:link href="http://localhost:1313/publication_types/article-journal/index.xml" rel="self" type="application/rss+xml" />
     <description>Article-Journal</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:60951/media/icon_hu_8e1b8a398c26e1fd.png</url>
+      <url>http://localhost:1313/media/icon_hu_8e1b8a398c26e1fd.png</url>
       <title>Article-Journal</title>
-      <link>http://localhost:60951/publication_types/article-journal/</link>
+      <link>http://localhost:1313/publication_types/article-journal/</link>
     </image>
     
     <item>
       <title>分散台帳を用いた複数組織による機密情報の共同管理および利活用システムの検討</title>
-      <link>http://localhost:60951/publication/journal_2025-ipsj-dp/</link>
+      <link>http://localhost:1313/publication/journal_2025-ipsj-dp/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/journal_2025-ipsj-dp/</guid>
+      <guid>http://localhost:1313/publication/journal_2025-ipsj-dp/</guid>
       <description>&lt;!-- 
 
 
@@ -55,9 +55,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>ブロックチェーンを用いた信頼ある機密データの管理および利活用基盤</title>
-      <link>http://localhost:60951/publication/journal_2022-ieice-d/</link>
+      <link>http://localhost:1313/publication/journal_2022-ieice-d/</link>
       <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/journal_2022-ieice-d/</guid>
+      <guid>http://localhost:1313/publication/journal_2022-ieice-d/</guid>
       <description>&lt;!-- 
 
 
@@ -96,9 +96,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>静電容量に基づくブロックシステム</title>
-      <link>http://localhost:60951/publication/journal_2017-jssst/</link>
+      <link>http://localhost:1313/publication/journal_2017-jssst/</link>
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/journal_2017-jssst/</guid>
+      <guid>http://localhost:1313/publication/journal_2017-jssst/</guid>
       <description>&lt;!-- 
 
 
@@ -137,9 +137,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>Lightweight Capacitance-based Block System for 3D Space Interaction</title>
-      <link>http://localhost:60951/publication/poster_2016_iss/</link>
+      <link>http://localhost:1313/publication/poster_2016_iss/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/poster_2016_iss/</guid>
+      <guid>http://localhost:1313/publication/poster_2016_iss/</guid>
       <description>&lt;!-- 
 
 

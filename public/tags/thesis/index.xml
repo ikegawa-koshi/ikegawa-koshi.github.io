@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Thesis | Koshi Ikegawa</title>
-    <link>http://localhost:60951/tags/thesis/</link>
-      <atom:link href="http://localhost:60951/tags/thesis/index.xml" rel="self" type="application/rss+xml" />
+    <title>Thesis | 池川航史</title>
+    <link>http://localhost:1313/tags/thesis/</link>
+      <atom:link href="http://localhost:1313/tags/thesis/index.xml" rel="self" type="application/rss+xml" />
     <description>Thesis</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:60951/media/icon_hu_8e1b8a398c26e1fd.png</url>
+      <url>http://localhost:1313/media/icon_hu_8e1b8a398c26e1fd.png</url>
       <title>Thesis</title>
-      <link>http://localhost:60951/tags/thesis/</link>
+      <link>http://localhost:1313/tags/thesis/</link>
     </image>
     
     <item>
       <title>ブロック構造物に対する磁気計測に基づく構造認識およびその3Dモデリングシステムへの応用</title>
-      <link>http://localhost:60951/publication/thesis/03_master/</link>
+      <link>http://localhost:1313/publication/thesis/03_master/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/thesis/03_master/</guid>
+      <guid>http://localhost:1313/publication/thesis/03_master/</guid>
       <description>&lt;!-- 
 
 
@@ -55,9 +55,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>磁気計測に基づくブロック型タンジブルユーザインタフェース</title>
-      <link>http://localhost:60951/publication/thesis/02_bachelor/</link>
+      <link>http://localhost:1313/publication/thesis/02_bachelor/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/thesis/02_bachelor/</guid>
+      <guid>http://localhost:1313/publication/thesis/02_bachelor/</guid>
       <description>&lt;!-- 
 
 
@@ -96,9 +96,9 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     
     <item>
       <title>遺伝的アルゴリズムにより設計した周波数選択板によるマイクロストリップアンテナの利得向上効果に関する研究</title>
-      <link>http://localhost:60951/publication/thesis/01_associate/</link>
+      <link>http://localhost:1313/publication/thesis/01_associate/</link>
       <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/publication/thesis/01_associate/</guid>
+      <guid>http://localhost:1313/publication/thesis/01_associate/</guid>
       <description>&lt;!-- 
 
 

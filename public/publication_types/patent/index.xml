@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Patent | Koshi Ikegawa</title>
-    <link>http://localhost:60951/publication_types/patent/</link>
-      <atom:link href="http://localhost:60951/publication_types/patent/index.xml" rel="self" type="application/rss+xml" />
+    <title>Patent | 池川航史</title>
+    <link>http://localhost:1313/publication_types/patent/</link>
+      <atom:link href="http://localhost:1313/publication_types/patent/index.xml" rel="self" type="application/rss+xml" />
     <description>Patent</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:60951/media/icon_hu_8e1b8a398c26e1fd.png</url>
+      <url>http://localhost:1313/media/icon_hu_8e1b8a398c26e1fd.png</url>
       <title>Patent</title>
-      <link>http://localhost:60951/publication_types/patent/</link>
+      <link>http://localhost:1313/publication_types/patent/</link>
     </image>
     
     <item>
       <title>[特開2023-168952] データ管理システム及びデータ管理方法</title>
-      <link>http://localhost:60951/patents/2022/</link>
+      <link>http://localhost:1313/patents/2022/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/patents/2022/</guid>
+      <guid>http://localhost:1313/patents/2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>[特開2024-125090] 分散台帳データ管理システム及びデータ管理方法</title>
-      <link>http://localhost:60951/patents/2023/</link>
+      <link>http://localhost:1313/patents/2023/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/patents/2023/</guid>
+      <guid>http://localhost:1313/patents/2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>[特許7590925] 機微データ管理システムおよび機微データ管理方法</title>
-      <link>http://localhost:60951/patents/2021/</link>
+      <link>http://localhost:1313/patents/2021/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/patents/2021/</guid>
+      <guid>http://localhost:1313/patents/2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>[特許7408499] 分散台帳管理システム、分散台帳管理方法、およびノード</title>
-      <link>http://localhost:60951/patents/2020/</link>
+      <link>http://localhost:1313/patents/2020/</link>
       <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/patents/2020/</guid>
+      <guid>http://localhost:1313/patents/2020/</guid>
       <description></description>
     </item>
     

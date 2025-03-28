@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Translation | Koshi Ikegawa</title>
-    <link>http://localhost:60951/tags/translation/</link>
-      <atom:link href="http://localhost:60951/tags/translation/index.xml" rel="self" type="application/rss+xml" />
+    <title>Translation | 池川航史</title>
+    <link>http://localhost:1313/tags/translation/</link>
+      <atom:link href="http://localhost:1313/tags/translation/index.xml" rel="self" type="application/rss+xml" />
     <description>Translation</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:60951/media/icon_hu_8e1b8a398c26e1fd.png</url>
+      <url>http://localhost:1313/media/icon_hu_8e1b8a398c26e1fd.png</url>
       <title>Translation</title>
-      <link>http://localhost:60951/tags/translation/</link>
+      <link>http://localhost:1313/tags/translation/</link>
     </image>
     
     <item>
       <title>Web3 and Sustainability [Web3とサステナビリティ]</title>
-      <link>http://localhost:60951/oss/translation/2023translation/</link>
+      <link>http://localhost:1313/oss/translation/2023translation/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/oss/translation/2023translation/</guid>
+      <guid>http://localhost:1313/oss/translation/2023translation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web3 and Sustainability [Web3とサステナビリティ]</title>
-      <link>http://localhost:60951/oss/translation/2022translation/</link>
+      <link>http://localhost:1313/oss/translation/2022translation/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:60951/oss/translation/2022translation/</guid>
+      <guid>http://localhost:1313/oss/translation/2022translation/</guid>
       <description></description>
     </item>
     

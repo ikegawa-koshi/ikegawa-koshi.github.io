@@ -1,5 +1,5 @@
 ---
-title: OSS貢献活動
+title: OSS貢献
 type: landing
 
 design:
