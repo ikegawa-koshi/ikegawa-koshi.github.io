@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Buntarou Shizuki | Koshi Ikegawa Portfolio</title>
+    <link>http://localhost:1313/en/author/buntarou-shizuki/</link>
+      <atom:link href="http://localhost:1313/en/author/buntarou-shizuki/index.xml" rel="self" type="application/rss+xml" />
+    <description>Buntarou Shizuki</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_645fa481986063ef.png</url>
+      <title>Buntarou Shizuki</title>
+      <link>http://localhost:1313/en/author/buntarou-shizuki/</link>
+    </image>
+    
+    <item>
+      <title>Investigating Effects of Users’ Background in Analyzing Long-Term Images from a Stationary Camera.</title>
+      <link>http://localhost:1313/en/pub_proceedings/2018_hcii/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/pub_proceedings/2018_hcii/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
