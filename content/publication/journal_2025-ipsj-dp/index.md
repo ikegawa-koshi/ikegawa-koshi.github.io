@@ -1,7 +1,7 @@
 ---
 title: "分散台帳を用いた複数組織による機密情報の共同管理および利活用システムの検討"
 authors:
-- admin
+- 池川航史
 # author_notes:
 # - "Equal contribution"
 # - "Equal contribution"

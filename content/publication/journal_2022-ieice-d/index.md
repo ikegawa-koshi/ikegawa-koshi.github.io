@@ -1,7 +1,8 @@
 ---
 title: "ブロックチェーンを用いた信頼ある機密データの管理および利活用基盤"
 authors:
-- admin
+- 池川航史
+- 西島直
 # author_notes:
 # - "Equal contribution"
 # - "Equal contribution"
