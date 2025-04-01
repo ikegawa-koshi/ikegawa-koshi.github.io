@@ -89,7 +89,7 @@ education:
       （指導教員：川上由紀）
 
 work:
-  - position: 研究員 / Senorior Researcher
+  - position: 研究員 / Senior Researcher
     company_name: 株式会社日立製作所 研究開発グループ
     company_url: 'https://www.hitachi.co.jp/rd/'
     company_logo: ''
@@ -100,7 +100,7 @@ work:
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: 企画員 / Researcher
+  - position: 研究員 / Researcher
     company_name: 株式会社日立製作所 研究開発グループ
     company_url: 'https://www.hitachi.co.jp/rd/'
     company_logo: ''
@@ -111,12 +111,23 @@ work:
     #   - Migrated infrastructure to a new data center
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: 総合職研修員 / Trainee
+  - position: 企画員 / Associate Researcher
+    company_name: 株式会社日立製作所 研究開発グループ
+    company_url: 'https://www.hitachi.co.jp/rd/'
+    company_logo: ''
+    date_start: 2021-06-01
+    date_end: 2023-04-01
+    # summary: |
+    #   Responsibilities include:
+    #   - Migrated infrastructure to a new data center
+    #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - position: 研修員 / Trainee
     company_name: 株式会社日立製作所 研究開発グループ
     company_url: 'https://www.hitachi.co.jp/rd/'
     company_logo: ''
     date_start: 2019-04-01
-    date_end: 2023-04-01
+    date_end: 2021-06-01
     # summary: |
     #   Responsibilities include:
     #   - Migrated infrastructure to a new data center
