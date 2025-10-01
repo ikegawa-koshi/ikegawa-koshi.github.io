@@ -63,8 +63,13 @@ education:
   #   button:
   #     text: 'Read Thesis'
   #     url: 'https://example.com'
+  - area: 在学中
+    institution: 筑波大学 大学院 博士後期課程
+    date_start: 2025-10-01
+    date_end: 
+    summary: 
   - area: 修士（工学）
-    institution: 筑波大学 大学院 システム情報工学研究科
+    institution: 筑波大学 大学院 博士前期課程
     date_start: 2017-04-01
     date_end: 2019-03-31
     summary: |
@@ -228,6 +233,7 @@ awards:
 また近年は、自己主権型アイデンティティ（SSI：Self-Sovereign Identity）に焦点を当て、検証可能なデジタル証明書（VC：Verifiable Credentials）の発行および検証スキームを様々なビジネスサービスに適応することを目指した研究活動を推進。
 学術的な研究活動に加え、OSS（Open Source Software）に関する貢献活動としてソフトウェアパッチの提供や、技術文書の翻訳、技術カンファレンスでの登壇発表を行っている。
 
-### 学会 / 研究会
+### その他所属 / 学会 / 研究会
 
+- 筑波大学 大学院 理工情報生命学術院 システム情報工学研究群 リスク・レジリエンス工学学位プログラム（博士後期課程）在学中
 - 電子情報通信学会 サービスコンピューティング研究会 専門委員会 幹事
