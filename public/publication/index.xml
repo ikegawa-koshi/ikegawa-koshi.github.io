@@ -5,12 +5,20 @@
     <link>http://localhost:1313/publication/</link>
       <atom:link href="http://localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>学術文献情報</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu_8e1b8a398c26e1fd.png</url>
       <title>学術文献情報</title>
       <link>http://localhost:1313/publication/</link>
     </image>
+    
+    <item>
+      <title>Design and Evaluation of a Self-Sovereign Identity System with a Custodial Wallet</title>
+      <link>http://localhost:1313/publication/proc_2025_icbta/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/proc_2025_icbta/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>分散台帳を用いた複数組織による機密情報の共同管理および利活用システムの検討</title>
