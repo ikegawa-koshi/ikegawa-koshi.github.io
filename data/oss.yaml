@@ -1,4 +1,8 @@
 # OSS貢献データ
+categories:
+  - speech
+  - speech_misc
+  - translation
 
 speech:
   title: "審査有り国際会議発表"

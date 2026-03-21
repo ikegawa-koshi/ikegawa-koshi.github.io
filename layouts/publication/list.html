@@ -5,13 +5,13 @@
   {{ $pubs := .Site.Data.publications }}
   {{ $globalIdx := 0 }}
 
-  {{ range $catKey := slice "journal" "proceedings" "poster" "jproc" "misc_intl" "misc_domestic" "thesis" }}
+  {{ range $catKey := $pubs.categories }}
     {{ with index $pubs $catKey }}
     <section>
       <h2 class="section-heading">{{ .title }}</h2>
       <ul class="divide-y divide-gray-100 dark:divide-slate-800">
         {{ range .items }}
-          {{ partial "citation-data.html" (dict "item" . "index" $globalIdx) }}
+          {{ partial "citation-item.html" (dict "item" . "index" $globalIdx) }}
           {{ $globalIdx = add $globalIdx 1 }}
         {{ end }}
       </ul>

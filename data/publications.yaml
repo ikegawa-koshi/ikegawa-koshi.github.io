@@ -1,5 +1,12 @@
 # 学術文献データ
-# カテゴリ: journal, proceedings, poster, jproc, misc, thesis
+categories:
+  - journal
+  - proceedings
+  - poster
+  - jproc
+  - misc_intl
+  - misc_domestic
+  - thesis
 
 journal:
   title: "学術誌論文 (Journal Articles)"
