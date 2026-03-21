@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Class-based dark mode for Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand colors - emerald accent */
+  --color-primary: #065f46;
+  --color-primary-light: #10b981;
+  --color-accent: #34d399;
+
+  /* Fonts */
+  --font-sans: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-accent);
+  }
+}
+
+@layer components {
+  /* Navigation link */
+  .nav-link {
+    @apply text-white/80 hover:text-white transition-colors duration-150 text-sm font-medium px-3 py-2 rounded-md hover:bg-white/10;
+  }
+
+  /* Card */
+  .card {
+    @apply bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 p-6 shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-light transition-colors duration-200 shadow-sm;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border-2 border-primary dark:border-primary-light text-primary dark:text-primary-light font-semibold text-sm hover:bg-primary dark:hover:bg-primary-light hover:text-white transition-colors duration-200;
+  }
+
+  /* Section heading */
+  .section-heading {
+    @apply text-2xl font-bold text-gray-900 dark:text-slate-100 border-b-2 border-accent pb-2 mb-6;
+  }
+
+  /* Tag/badge */
+  .tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 dark:bg-primary-light/20 text-primary dark:text-primary-light;
+  }
+}

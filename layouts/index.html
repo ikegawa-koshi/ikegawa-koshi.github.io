@@ -1,0 +1,181 @@
+{{ define "main" }}
+{{ $admin := .Site.GetPage "/authors/admin" }}
+
+<!-- Hero / Profile Section -->
+<section class="bg-gradient-to-br from-primary to-emerald-800 dark:from-slate-800 dark:to-slate-900 text-white py-16 sm:py-20">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8">
+      <!-- Avatar -->
+      {{ $avatar := $admin.Resources.GetMatch "avatar.*" }}
+      {{ with $avatar }}
+      <img src="{{ .RelPermalink }}" alt="Profile photo"
+           class="w-36 h-36 rounded-full object-cover border-4 border-white/20 shadow-lg flex-shrink-0">
+      {{ end }}
+
+      <div class="text-center sm:text-left">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-1">{{ $admin.Title }}</h1>
+        <p class="text-white/70 text-sm mb-3">{{ $admin.Params.name_pronunciation }}</p>
+        <p class="text-accent font-semibold text-lg mb-1">{{ $admin.Params.role }}</p>
+        {{ range $admin.Params.organizations }}
+        <p class="text-white/80 text-sm">
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="text-white/80 hover:text-white">{{ .name }}</a>
+        </p>
+        {{ end }}
+
+        <!-- Social links -->
+        <div class="flex items-center gap-3 mt-4 justify-center sm:justify-start">
+          {{ range $admin.Params.profiles }}
+          <a href="{{ .url }}" target="_blank" rel="noopener"
+             class="text-white/70 hover:text-white transition-colors"
+             title="{{ .label }}">
+            {{ if eq .icon "at-symbol" }}
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"/></svg>
+            {{ else if eq .icon "brands/linkedin" }}
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            {{ else if eq .icon "academicons/google-scholar" }}
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            {{ else if eq .icon "academicons/orcid" }}
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-3.931-3.722h-2.388z"/></svg>
+            {{ end }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bio & Content -->
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+  <!-- About -->
+  <section id="about">
+    <div class="prose prose-sm dark:prose-invert max-w-none prose-p:text-gray-700 dark:prose-p:text-slate-300 prose-p:leading-relaxed">
+      {{ $admin.Content }}
+    </div>
+  </section>
+
+  <!-- Interests -->
+  {{ with $admin.Params.interests }}
+  <section id="interests">
+    <h2 class="section-heading">研究分野</h2>
+    <div class="flex flex-wrap gap-2">
+      {{ range . }}
+      <span class="tag">{{ . }}</span>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Recent Publications (top 5, all categories merged and sorted by date desc) -->
+  {{ $pubs := .Site.Data.publications }}
+  {{ $allItems := slice }}
+  {{ range $cat := slice "journal" "proceedings" "poster" "jproc" "misc_intl" "misc_domestic" "thesis" }}
+    {{ with index $pubs $cat }}
+      {{ range .items }}
+        {{ $allItems = $allItems | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $sorted := sort $allItems "date" "desc" }}
+  <section id="publications">
+    <h2 class="section-heading">文献</h2>
+    <ul class="divide-y divide-gray-100 dark:divide-slate-800">
+      {{ range $idx, $item := first 5 $sorted }}
+        {{ partial "citation-data.html" (dict "item" $item "index" $idx) }}
+      {{ end }}
+    </ul>
+    <div class="mt-4">
+      <a href="{{ "publication/" | relURL }}" class="btn-outline text-sm">
+        すべて見る
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Patents -->
+  {{ with .Site.Data.patents }}
+  <section id="patents">
+    <h2 class="section-heading">特許</h2>
+    <ul class="divide-y divide-gray-100 dark:divide-slate-800">
+      {{ range first 3 .items }}
+      {{ partial "patent-item.html" . }}
+      {{ end }}
+    </ul>
+    <div class="mt-4">
+      <a href="{{ "patents/" | relURL }}" class="btn-outline text-sm">
+        すべて見る
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Experience (Timeline) -->
+  {{ with $admin.Params.work }}
+  <section id="experience">
+    <h2 class="section-heading">職歴</h2>
+    <div class="relative pl-6 border-l-2 border-accent/40 space-y-6">
+      {{ range . }}
+      <div class="relative">
+        <div class="absolute -left-[25px] top-1 w-3 h-3 rounded-full bg-accent border-2 border-white dark:border-slate-900"></div>
+        <p class="font-semibold text-gray-900 dark:text-slate-100">{{ .position }}</p>
+        <p class="text-sm text-gray-600 dark:text-slate-400">
+          {{ with .company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+          {{ .company_name }}
+          {{ with .company_url }}</a>{{ end }}
+        </p>
+        <p class="text-xs text-gray-500 dark:text-slate-500 mt-1">
+          {{ (time .date_start).Format "2006年01月" }} &ndash;
+          {{ if .date_end }}{{ (time .date_end).Format "2006年01月" }}{{ else }}現在{{ end }}
+        </p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Education -->
+  {{ with $admin.Params.education }}
+  <section id="education">
+    <h2 class="section-heading">学歴</h2>
+    <div class="relative pl-6 border-l-2 border-accent/40 space-y-6">
+      {{ range . }}
+      <div class="relative">
+        <div class="absolute -left-[25px] top-1 w-3 h-3 rounded-full bg-accent border-2 border-white dark:border-slate-900"></div>
+        <p class="font-semibold text-gray-900 dark:text-slate-100">{{ .area }}</p>
+        <p class="text-sm text-gray-600 dark:text-slate-400">{{ .institution }}</p>
+        <p class="text-xs text-gray-500 dark:text-slate-500 mt-1">
+          {{ (time .date_start).Format "2006年01月" }} &ndash;
+          {{ if .date_end }}{{ (time .date_end).Format "2006年01月" }}{{ else }}現在{{ end }}
+        </p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Awards -->
+  {{ with $admin.Params.awards }}
+  <section id="awards">
+    <h2 class="section-heading">受賞歴</h2>
+    <ul class="space-y-3">
+      {{ range . }}
+      <li class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+        <time class="text-xs text-gray-500 dark:text-slate-500 font-mono flex-shrink-0">{{ (time .date).Format "2006-01" }}</time>
+        <div>
+          <p class="text-sm font-medium text-gray-900 dark:text-slate-100">{{ .title }}</p>
+          <p class="text-xs text-gray-500 dark:text-slate-400">{{ .awarder }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+</div>
+{{ end }}

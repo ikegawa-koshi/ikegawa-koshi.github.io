@@ -1,0 +1,234 @@
+# 学術文献データ
+# カテゴリ: journal, proceedings, poster, jproc, misc, thesis
+
+journal:
+  title: "学術誌論文 (Journal Articles)"
+  items:
+    - title: "分散台帳を用いた複数組織による機密情報の共同管理および利活用システムの検討"
+      authors: "池川航史"
+      publication: "情報処理学会論文誌デジタルプラクティス（TDP）, Vol.6, No.1, pp.87-98"
+      date: "2025-01-15"
+      pdf: "/pdf/journal_2025-ipsj-dp.pdf"
+      bib: "/bib/journal_2025-ipsj-dp.bib"
+      links:
+        - name: "CiNii"
+          url: "http://id.nii.ac.jp/1001/00242200/"
+        - name: "Web"
+          url: "https://www.ipsj.or.jp/dp/contents/publication/61/TR0601-14.html"
+      bibtex: |
+        @article{ikegawa2025,
+          author  = {池川, 航史},
+          issue   = {1},
+          journal = {情報処理学会論文誌デジタルプラクティス（TDP）},
+          month   = {Jan},
+          pages   = {87--98},
+          title   = {分散台帳を用いた複数組織による機密情報の共同管理および利活用システムの検討},
+          volume  = {6},
+          year    = {2025}
+        }
+
+    - title: "ブロックチェーンを用いた信頼ある機密データの管理および利活用基盤"
+      authors: "池川航史, 西島直"
+      publication: "電子情報通信学会論文誌D"
+      date: "2022-11-01"
+      pdf: "/pdf/journal_2022-ieice-d.pdf"
+      bib: "/bib/journal_2022-ieice-d.bib"
+      doi: "10.14923/transinfj.2021SGL0001"
+      bibtex: |
+        @article{ikegawa2022,
+          author  = {池川, 航史 and 西島, 直},
+          journal = {電子情報通信学会論文誌D},
+          title   = {ブロックチェーンを用いた信頼ある機密データの管理および利活用基盤},
+          year    = {2022},
+          doi     = {10.14923/transinfj.2021SGL0001}
+        }
+
+    - title: "静電容量に基づくブロックシステム"
+      authors: "吉田有花, 鶴田真也, 池川航史, 阿部哲也, 志築文太郎, 田中二郎"
+      publication: "日本ソフトウェア科学会 コンピュータ ソフトウェア, Vol.34, No.2, pp.93-101"
+      date: "2017-05-01"
+      pdf: "/pdf/journal_2017-jssst.pdf"
+      bib: "/bib/journal_2017-jssst.bib"
+      doi: "10.11309/jssst.34.2_93"
+      bibtex: |
+        @article{yoshida2017,
+          title={静電容量に基づくブロックシステム},
+          author={吉田 有花 and 鶴田 真也 and 池川 航史 and 阿部 哲也 and 志築 文太郎 and 田中 二郎},
+          journal={コンピュータ ソフトウェア},
+          volume={34},
+          number={2},
+          pages={2_93-2_101},
+          year={2017},
+          doi={10.11309/jssst.34.2_93}
+        }
+
+proceedings:
+  title: "国際会議論文 (Conference Papers)"
+  items:
+    - title: "Design and Evaluation of a Self-Sovereign Identity System with a Custodial Wallet"
+      authors: "Koshi Ikegawa, Tatsuya Sato"
+      publication: "2025 8th International Conference on Blockchain Technology and Applications (ICBTA 2025)"
+      date: "2025-12-13"
+      note: "To Appear"
+
+    - title: "Tesla Blocks: Magnetism-Based Tangible 3D Modeling System using Block-Shaped Objects"
+      authors: "Koshi Ikegawa, Buntarou Shizuki"
+      publication: "In Proceedings of the 30th Australian Conference on Human-Computer Interaction (OzCHI 2018), pp.411-415"
+      date: "2018-12-01"
+      pdf: "/pdf/proc_2018_ozchi.pdf"
+      doi: "10.1145/3292147.3292221"
+      bibtex: |
+        @inproceedings{Ikegawa_2018_OzCHI,
+          series = {OzCHI '18},
+          title = {Tesla blocks: magnetism-based tangible 3D modeling system using block-shaped objects},
+          url = {http://dx.doi.org/10.1145/3292147.3292221},
+          DOI = {10.1145/3292147.3292221},
+          booktitle = {Proceedings of the 30th Australian Conference on Computer-Human Interaction},
+          publisher = {ACM},
+          author = {Ikegawa, Koshi and Shizuki, Buntarou},
+          year = {2018},
+          month = dec,
+          pages = {411--415},
+          collection = {OzCHI '18}
+        }
+
+    - title: "Investigating Effects of Users' Background in Analyzing Long-Term Images from a Stationary Camera"
+      authors: "Koshi Ikegawa, Akira Ishii, Kazunori Okamura, Buntarou Shizuki, Shin Takahashi"
+      publication: "In Proceedings of the 20th International Conference on HIMI 2018, Held as Part of HCI International 2018 (HCII 2018), pp.490-504"
+      date: "2018-07-01"
+      pdf: "/pdf/proc_2018_hcii.pdf"
+      doi: "10.1007/978-3-319-92043-6_41"
+      bibtex: |
+        @inbook{Ikegawa_2018_HCII,
+          title = {Investigating Effects of Users' Background in Analyzing Long-Term Images from a Stationary Camera},
+          ISBN = {9783319920436},
+          ISSN = {1611-3349},
+          url = {http://dx.doi.org/10.1007/978-3-319-92043-6_41},
+          DOI = {10.1007/978-3-319-92043-6_41},
+          booktitle = {Human Interface and the Management of Information. Interaction, Visualization, and Analytics},
+          publisher = {Springer International Publishing},
+          author = {Ikegawa, Koshi and Ishii, Akira and Okamura, Kazunori and Shizuki, Buntarou and Takahashi, Shin},
+          year = {2018},
+          pages = {490--504}
+        }
+
+poster:
+  title: "国際会議ポスター予稿 (Conference Posters)"
+  items:
+    - title: "Investigation of Touch Interfaces Using Multilayered Urushi Circuit"
+      authors: "Koshi Ikegawa, Shuhei Aoyama, Shogo Tsuchikiri, Takuto Nakamura, Yuki Hashimoto, Buntarou Shizuki"
+      publication: "In Proceedings of the 12th International Conference on Tangible, Embedded, and Embodied Interaction (TEI 2018), pp.115-122"
+      date: "2018-03-01"
+      pdf: "/pdf/poster_2018_tei.pdf"
+      doi: "10.1145/3173225.3173285"
+      bibtex: |
+        @inproceedings{Ikegawa_2018_TEI,
+          series = {TEI '18},
+          title = {Investigation of Touch Interfaces Using Multilayered Urushi Circuit},
+          url = {http://dx.doi.org/10.1145/3173225.3173285},
+          DOI = {10.1145/3173225.3173285},
+          booktitle = {Proceedings of the Twelfth International Conference on Tangible, Embedded, and Embodied Interaction},
+          publisher = {ACM},
+          author = {Ikegawa, Koshi and Aoyama, Shuhei and Tsuchikiri, Shogo and Nakamura, Takuto and Hashimoto, Yuki and Shizuki, Buntarou},
+          year = {2018},
+          month = mar,
+          pages = {115--122},
+          collection = {TEI '18}
+        }
+
+    - title: "Lightweight Capacitance-based Block System for 3D Space Interaction"
+      authors: "Koshi Ikegawa, Masaya Tsuruta, Tetsuya Abe, Arika Yoshida, Buntarou Shizuki, Shin Takahashi"
+      publication: "In Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces (ISS 2016), pp.307-312"
+      date: "2016-11-01"
+      pdf: "/pdf/poster_2016_iss.pdf"
+      doi: "10.1145/2992154.2996772"
+      bibtex: |
+        @inproceedings{Ikegawa_2016_ISS,
+          series = {ISS '16},
+          title = {Lightweight Capacitance-based Block System for 3D Space Interaction},
+          url = {http://dx.doi.org/10.1145/2992154.2996772},
+          DOI = {10.1145/2992154.2996772},
+          booktitle = {Proceedings of the 2016 ACM International Conference on Interactive Surfaces and Spaces},
+          publisher = {ACM},
+          author = {Ikegawa, Koshi and Tsuruta, Masaya and Abe, Tetsuya and Yoshida, Arika and Shizuki, Buntarou and Takahashi, Shin},
+          year = {2016},
+          month = nov,
+          pages = {307--312},
+          collection = {ISS '16}
+        }
+
+jproc:
+  title: "日本国内会議論文 (Japanese Conference Papers)"
+  items:
+    - title: "日本語フリック入力を用いたモバイル端末の把持姿勢識別"
+      authors: "永井美波, 池川航史, 志築文太郎, 高橋伸"
+      publication: "第25回インタラクティブシステムとソフトウェアに関するワークショップ論文集 (WISS 2017)"
+      date: "2017-12-01"
+      pdf: "/pdf/jproc_2017_wiss_nagai.pdf"
+
+misc_intl:
+  title: "その他 国際発表 (Misc. International)"
+  items:
+    - title: "Capacitance- and Phase-Based Detection Technique of Finger Bend and Touched Hand Using Ring-Shaped Device"
+      authors: "Minto Funakoshi, Koshi Ikegawa, Buntarou Shizuki"
+      publication: "CHI 2019 symposia on Asian CHI Symposium: Emerging HCI Research Collection, 7 pages"
+      date: "2019-05-01"
+
+    - title: "Touch Interface Design System in Multilayered Urushi Circuit"
+      authors: "Takuto Nakamura, Koshi Ikegawa, Shogo Tsuchikiri, Keita Saito, Kazushi Kamezawa, Yuki Hashimoto, Buntarou Shizuki"
+      publication: "CHI 2019 symposia on Asian CHI Symposium: Emerging HCI Research Collection, 7 pages"
+      date: "2019-05-01"
+
+    - title: "A Block System with Magnetism-based Structure Recognition"
+      authors: "Koshi Ikegawa, Shuta Nakamae, Buntarou Shizuki"
+      publication: "CHI 2017 symposia on Asian CHI Symposium: Emerging HCI Research Collection, 8 pages"
+      date: "2017-05-01"
+
+misc_domestic:
+  title: "その他 国内発表 (Misc. Domestic)"
+  items:
+    - title: "Secure and Traceable System for Genomic Data Sharing Using Hyperledger Fabric Blockchain"
+      authors: "Koshi Ikegawa, Nao Nishijima, Yoji Ozawa, Katsuhiro Fukunaka, Hironori Emaru, Masaru Hisada, Akihito Kaneko, Eiichi Araki, Ai Okada, Yuichi Shiraishi"
+      publication: "2020年日本バイオインフォマティクス学会年会 第9回 生命医薬情報学連合大会 (IIBMP2020)"
+      date: "2020-09-01"
+
+    - title: "位相に基づく指輪型入力デバイスの検討"
+      authors: "舩越南斗, 池川航史, 志築文太郎, 高橋伸"
+      publication: "情報処理学会研究報告, Vol.2018-HCI-182, No.34, 6 pages"
+      date: "2018-08-01"
+
+    - title: "磁気計測に基づくブロック型タンジブル3Dモデリングシステム"
+      authors: "池川航史, 志築文太郎"
+      publication: "第26回インタラクティブシステムとソフトウェアに関するワークショップ論文集 (WISS 2018), 予稿なしデモ・ポスター, 日本ソフトウェア科学会"
+      date: "2018-09-01"
+
+    - title: "磁気計測に基づき構造認識を行うブロックシステム"
+      authors: "池川航史, 中前秀太, 志築文太郎"
+      publication: "インタラクション2017論文集, 情報処理学会, pp.707-711, 5 pages"
+      date: "2017-02-01"
+
+    - title: "遺伝的アルゴリズムにより設計した周波数選択板によるマイクロストリップアンテナの利得向上効果に関する研究"
+      authors: "池川航史, 川上由紀"
+      publication: "電子情報通信学会 北陸支部 平成26年度学生による研究発表会, 1 page"
+      date: "2015-03-01"
+
+thesis:
+  title: "学位論文 (Thesis)"
+  items:
+    - title: "ブロック構造物に対する磁気計測に基づく構造認識およびその3Dモデリングシステムへの応用"
+      authors: "池川航史 [指導教員: 志築文太郎]"
+      publication: "筑波大学 システム情報工学研究科 コンピュータサイエンス専攻, 73 pages"
+      date: "2019-03-01"
+      degree: "修士（工学）"
+
+    - title: "磁気計測に基づくブロック型タンジブルユーザインタフェース"
+      authors: "池川航史 [指導教員: 志築文太郎]"
+      publication: "筑波大学 情報学群 情報メディア創成学類, 42 pages"
+      date: "2017-03-01"
+      degree: "学士（情報メディア科学）"
+
+    - title: "遺伝的アルゴリズムにより設計した周波数選択板によるマイクロストリップアンテナの利得向上効果に関する研究"
+      authors: "池川航史 [指導教員: 川上由紀]"
+      publication: "福井工業高等専門学校 電子情報工学科, 35 pages"
+      date: "2015-03-01"
+      degree: "準学士（電子情報工学）"

@@ -1,0 +1,66 @@
+<script>
+  // Dark mode toggle
+  var btn = document.getElementById('dark-mode-toggle');
+  var iconSun = document.getElementById('icon-sun');
+  var iconMoon = document.getElementById('icon-moon');
+  var html = document.documentElement;
+
+  function updateIcons() {
+    if (html.classList.contains('dark')) {
+      iconSun.classList.remove('hidden');
+      iconMoon.classList.add('hidden');
+    } else {
+      iconSun.classList.add('hidden');
+      iconMoon.classList.remove('hidden');
+    }
+  }
+
+  updateIcons();
+
+  btn.addEventListener('click', function() {
+    html.classList.toggle('dark');
+    localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    updateIcons();
+  });
+
+  // Mobile menu toggle
+  var mobileBtn = document.getElementById('mobile-menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+
+  mobileBtn.addEventListener('click', function() {
+    var isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden', isOpen);
+    mobileBtn.setAttribute('aria-expanded', String(!isOpen));
+  });
+
+  // BibTeX modal
+  function showBibtex(id) {
+    document.getElementById(id).classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function hideBibtex(id) {
+    document.getElementById(id).classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  function copyBibtex(contentId) {
+    var text = document.getElementById(contentId).textContent;
+    navigator.clipboard.writeText(text).then(function() {
+      var btn = document.getElementById(contentId).nextElementSibling;
+      var original = btn.innerHTML;
+      btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Copied!';
+      setTimeout(function() { btn.innerHTML = original; }, 2000);
+    });
+  }
+
+  // Close BibTeX modal on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('[id^="bib-"]:not(.hidden)').forEach(function(el) {
+        el.classList.add('hidden');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+</script>

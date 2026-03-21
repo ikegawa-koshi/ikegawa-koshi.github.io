@@ -1,0 +1,68 @@
+# OSS貢献データ
+
+speech:
+  title: "審査有り国際会議発表"
+  items:
+    - title: "Demo: Infrastructure for Managing, Sharing, and Utilizing Sensitive Data using Hyperledger Fabric Private Chaincode Running on Microsoft Azure"
+      authors: "Koshi Ikegawa"
+      publication: "Hyperledger Global Forum 2022 (HLGF 2022)"
+      date: "2022-09-01"
+      slides: "https://speakerdeck.com/ikegawa/demo-infrastructure-for-managing-sharing-and-utilizing-sensitive-data-using-hyperledger-fabric-private-chaincode-running-on-microsoft-azure"
+
+    - title: "Trust Data Sharing and Utilization Infrastructure for Sensitive Data Using Hyperledger Projects"
+      authors: "Koshi Ikegawa"
+      publication: "Open Source Summit Japan 2021 (OSSJ 2021)"
+      date: "2021-12-14"
+      slides: "https://speakerdeck.com/ikegawa/trust-data-sharing-and-utilization-infrastructure-for-sensitive-data-using-hyperledger-avalon"
+
+    - title: "Trust Data Sharing and Utilization Infrastructure for Sensitive Data using Hyperledger Avalon"
+      authors: "Koshi Ikegawa"
+      publication: "Hyperledger Global Forum 2021 (HLGF 2021)"
+      date: "2021-06-08"
+      slides: "https://speakerdeck.com/ikegawa/trust-data-sharing-and-utilization-infrastructure-for-sensitive-data-using-hyperledger-avalon"
+
+speech_misc:
+  title: "その他 (Misc.)"
+  items:
+    - title: "Hyperledger概要と技術課題"
+      authors: "佐藤竜也, 池川航史, 長谷川学"
+      publication: "Theory Meets Blockchain Engineering (TMBE)"
+      date: "2024-01-27"
+      venue: "Solidity House at 佐賀県, 日本"
+
+    - title: "ブロックチェーンを用いた自己主権型デジタルID管理"
+      authors: "池川航史"
+      publication: "Hyperledger Tokyo - エンタープライズブロックチェーンワークショップ"
+      date: "2023-10-17"
+      venue: "オンライン開催"
+
+    - title: "ブロックチェーンを用いた自己主権型デジタルID管理"
+      authors: "池川航史"
+      publication: "WebX - Hyperledger Foundation Workshop"
+      date: "2023-07-26"
+      venue: "東京国際フォーラム at 東京都, 日本"
+
+    - title: "Hyperledger Fabric Private Chaincodeについて"
+      authors: "池川航史"
+      publication: "Hyperledger Tokyo Meetup"
+      date: "2021-10-07"
+      venue: "オンライン開催"
+
+translation:
+  title: "翻訳活動"
+  items:
+    - title: "Web3 and Sustainability [Web3とサステナビリティ]"
+      authors: "Scott Chamberlin (Intel) [翻訳：池川航史・西島直（日立製作所）、平山毅（日本IBM）]"
+      publication: "The Linux Foundation"
+      date: "2023-02-01"
+      links:
+        - name: "Link"
+          url: "https://www.linuxfoundation.jp/publications/2023/06/web3-and-sustainability-jp/"
+
+    - title: "NFTs and the Environment [NFTと環境]"
+      authors: "Alan Majer (Good Robot) [翻訳：池川航史・伊藤哲・永井崇之（日立製作所）、浅沼岳樹（富士通）編集：谷口暢夫]"
+      publication: "The Linux Foundation"
+      date: "2022-04-01"
+      links:
+        - name: "Link"
+          url: "https://www.linuxfoundation.jp/publications/2022/09/nft-carbon-footprint/"

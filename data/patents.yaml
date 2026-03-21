@@ -1,0 +1,46 @@
+# 特許データ
+items:
+  - title: "[特開2026-020966] データ管理システム、サービスシステム、及びデータ管理方法"
+    authors: "池川航史"
+    date: "2024-07-29"
+    links:
+      - name: "Google Patents"
+        url: "https://patents.google.com/patent/JP2026020966A"
+      - name: "J-PlatPat"
+        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2026-020966/11/ja"
+
+  - title: "[特開2024-125090] 分散台帳データ管理システム及びデータ管理方法"
+    authors: "池川航史, 西島直"
+    date: "2023-03-03"
+    links:
+      - name: "Google Patents"
+        url: "https://patents.google.com/patent/JP2024125090A"
+      - name: "J-PlatPat"
+        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2024-125090/11/ja"
+
+  - title: "[特開2023-168952] データ管理システム及びデータ管理方法"
+    authors: "池川航史"
+    date: "2023-05-16"
+    links:
+      - name: "Google Patents"
+        url: "https://patents.google.com/patent/JP2023168952A"
+      - name: "J-PlatPat"
+        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2023-168952/11/ja"
+
+  - title: "[特許7590925] 機微データ管理システムおよび機微データ管理方法"
+    authors: "池川航史, 西島直, 小澤洋司"
+    date: "2021-05-31"
+    links:
+      - name: "Google Patents"
+        url: "https://patents.google.com/patent/JP2022183596A"
+      - name: "J-PlatPat"
+        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2022-183596/11/ja"
+
+  - title: "[特許7408499] 分散台帳管理システム、分散台帳管理方法、およびノード"
+    authors: "池川航史, 西島直, 小澤洋司"
+    date: "2020-07-06"
+    links:
+      - name: "Google Patents"
+        url: "https://patents.google.com/patent/JP2022014369A"
+      - name: "J-PlatPat"
+        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-7408499/15/ja"

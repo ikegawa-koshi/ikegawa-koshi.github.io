@@ -1,0 +1,91 @@
+{{ define "main" }}
+{{ $admin := .Site.GetPage "/authors/admin" }}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+  <h1 class="text-3xl font-bold text-gray-900 dark:text-slate-100">経歴</h1>
+
+  <!-- Work -->
+  {{ with $admin.Params.work }}
+  <section>
+    <h2 class="section-heading">職歴</h2>
+    <div class="relative pl-6 border-l-2 border-accent/40 space-y-6">
+      {{ range . }}
+      <div class="relative">
+        <div class="absolute -left-[25px] top-1 w-3 h-3 rounded-full bg-accent border-2 border-white dark:border-slate-900"></div>
+        <p class="font-semibold text-gray-900 dark:text-slate-100">{{ .position }}</p>
+        <p class="text-sm text-gray-600 dark:text-slate-400">
+          {{ with .company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+          {{ .company_name }}
+          {{ with .company_url }}</a>{{ end }}
+        </p>
+        <p class="text-xs text-gray-500 dark:text-slate-500 mt-1">
+          {{ (time .date_start).Format "2006年01月" }} &ndash;
+          {{ if .date_end }}{{ (time .date_end).Format "2006年01月" }}{{ else }}現在{{ end }}
+        </p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Education -->
+  {{ with $admin.Params.education }}
+  <section>
+    <h2 class="section-heading">学歴</h2>
+    <div class="relative pl-6 border-l-2 border-accent/40 space-y-6">
+      {{ range . }}
+      <div class="relative">
+        <div class="absolute -left-[25px] top-1 w-3 h-3 rounded-full bg-accent border-2 border-white dark:border-slate-900"></div>
+        <p class="font-semibold text-gray-900 dark:text-slate-100">{{ .area }}</p>
+        <p class="text-sm text-gray-600 dark:text-slate-400">{{ .institution }}</p>
+        <p class="text-xs text-gray-500 dark:text-slate-500 mt-1">
+          {{ (time .date_start).Format "2006年01月" }} &ndash;
+          {{ if .date_end }}{{ (time .date_end).Format "2006年01月" }}{{ else }}現在{{ end }}
+        </p>
+        {{ with .summary }}
+        <p class="text-xs text-gray-500 dark:text-slate-500 mt-1 leading-relaxed">{{ . }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Committee -->
+  <section>
+    <h2 class="section-heading">委員歴</h2>
+    <div class="prose prose-sm dark:prose-invert max-w-none">
+      {{ .Content }}
+    </div>
+  </section>
+
+  <!-- Lectures -->
+  {{ with $admin.Params.lectures }}
+  <section>
+    <h2 class="section-heading">講義・講演</h2>
+    <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
+      {{ range . }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  <!-- Awards -->
+  {{ with $admin.Params.awards }}
+  <section>
+    <h2 class="section-heading">受賞歴</h2>
+    <ul class="space-y-3">
+      {{ range . }}
+      <li class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+        <time class="text-xs text-gray-500 dark:text-slate-500 font-mono flex-shrink-0">{{ (time .date).Format "2006-01" }}</time>
+        <div>
+          <p class="text-sm font-medium text-gray-900 dark:text-slate-100">{{ .title }}</p>
+          <p class="text-xs text-gray-500 dark:text-slate-400">{{ .awarder }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</div>
+{{ end }}

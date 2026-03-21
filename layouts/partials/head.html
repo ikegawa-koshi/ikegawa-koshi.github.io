@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja" class="" id="html-root">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#065f46">
+  <link rel="icon" type="image/png" href="{{ "icon.png" | relURL }}">
+  <link rel="apple-touch-icon" href="{{ "icon.png" | relURL }}">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  {{ $css := resources.Get "css/main.css" | css.TailwindCSS (dict "minify" hugo.IsProduction) }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+  <!-- Dark mode: apply saved preference before paint -->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (theme !== 'light') {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+</head>
