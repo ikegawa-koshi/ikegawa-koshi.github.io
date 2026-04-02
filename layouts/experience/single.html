@@ -1,12 +1,16 @@
 {{ define "main" }}
 {{ $admin := .Site.GetPage "/authors/admin" }}
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
-  <h1 class="text-3xl font-bold text-gray-900 dark:text-slate-100">経歴</h1>
+<div class="max-w-[960px] mx-auto px-6 py-16 space-y-16">
+  <h1 class="font-heading text-ink" style="font-size: 2rem; font-weight: 700; letter-spacing: 0.02em;">経歴</h1>
 
   <!-- Work -->
   {{ with $admin.Params.work }}
   <section>
-    <h2 class="section-heading">職歴</h2>
+    <div class="section-label">
+      <span class="section-label-kanji">職歴</span>
+      <span class="section-label-line"></span>
+      <span class="section-label-en">Experience</span>
+    </div>
     {{ partial "timeline.html" (dict "items" . "type" "work") }}
   </section>
   {{ end }}
@@ -14,15 +18,23 @@
   <!-- Education -->
   {{ with $admin.Params.education }}
   <section>
-    <h2 class="section-heading">学歴</h2>
+    <div class="section-label">
+      <span class="section-label-kanji">学歴</span>
+      <span class="section-label-line"></span>
+      <span class="section-label-en">Education</span>
+    </div>
     {{ partial "timeline.html" (dict "items" . "type" "education") }}
   </section>
   {{ end }}
 
   <!-- Committee -->
   <section>
-    <h2 class="section-heading">委員歴</h2>
-    <div class="prose prose-sm dark:prose-invert max-w-none">
+    <div class="section-label">
+      <span class="section-label-kanji">委員歴</span>
+      <span class="section-label-line"></span>
+      <span class="section-label-en">Committee</span>
+    </div>
+    <div class="prose prose-sm dark:prose-invert max-w-none text-body" style="font-size: 0.92rem;">
       {{ .Content }}
     </div>
   </section>
@@ -30,8 +42,12 @@
   <!-- Lectures -->
   {{ with $admin.Params.lectures }}
   <section>
-    <h2 class="section-heading">講義・講演</h2>
-    <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
+    <div class="section-label">
+      <span class="section-label-kanji">講義・講演</span>
+      <span class="section-label-line"></span>
+      <span class="section-label-en">Lectures</span>
+    </div>
+    <ul class="space-y-2 text-sm text-body">
       {{ range . }}
       <li>{{ . }}</li>
       {{ end }}
@@ -42,7 +58,11 @@
   <!-- Awards -->
   {{ with $admin.Params.awards }}
   <section>
-    <h2 class="section-heading">受賞歴</h2>
+    <div class="section-label">
+      <span class="section-label-kanji">受賞歴</span>
+      <span class="section-label-line"></span>
+      <span class="section-label-en">Awards</span>
+    </div>
     {{ partial "awards.html" . }}
   </section>
   {{ end }}

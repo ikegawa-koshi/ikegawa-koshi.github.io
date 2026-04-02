@@ -5,59 +5,250 @@
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand colors - emerald accent */
-  --color-primary: #065f46;
-  --color-primary-light: #10b981;
-  --color-accent: #34d399;
+  /* Brand colors — Warm Ink + Amber */
+  --color-primary: #1a1a2e;
+  --color-primary-light: #2a2a3e;
+  --color-accent: #b8943e;
+  --color-accent-light: #d4b062;
 
   /* Fonts */
-  --font-sans: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-display: "Shippori Mincho", "Yu Mincho", serif;
+  --font-sans: "IBM Plex Sans JP", "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 
 @layer base {
   html {
     font-family: var(--font-sans);
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #faf8f5;
+    color: #1a1a2e;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    --bg-page: #faf8f5;
+  }
+
+  .dark body {
+    background-color: #111118;
+    color: #e8e4de;
+    --bg-page: #111118;
   }
 
   a {
-    color: var(--color-primary-light);
+    color: #8a7230;
     text-decoration: none;
+    transition: color 0.15s;
+  }
+  .dark a {
+    color: #d4b062;
   }
 
   a:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-light);
   }
+}
+
+@layer utilities {
+  /* Semantic text colors — light/dark aware */
+  .text-ink { color: #1a1a2e; }
+  .dark .text-ink { color: #e8e4de; }
+
+  .text-body { color: #4a4a5a; }
+  .dark .text-body { color: #a8a4a0; }
+
+  .text-muted { color: #7a7a8a; }
+  .dark .text-muted { color: #6a6a7a; }
+
+  .text-accent-display { color: #d4b062; }
+
+  .text-accent-sub { color: #8a7230; }
+  .dark .text-accent-sub { color: #d4b062; }
+
+  .border-divider { border-color: #e5e0d8; }
+  .dark .border-divider { border-color: #2a2a3a; }
+
+  .bg-divider { background-color: #ece8e1; }
+  .dark .bg-divider { background-color: #2a2a3a; }
+
+  /* About section — affiliation list styled with left border */
+  .about-content ul {
+    list-style: none;
+    padding-left: 1rem;
+    border-left: 2px solid #b8943e;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #4a4a5a;
+    line-height: 2;
+    max-width: none;
+  }
+  .dark .about-content ul {
+    color: #a8a4a0;
+  }
+  .about-content ul li {
+    padding-left: 0;
+  }
+  .about-content ul li::before {
+    display: none;
+  }
+  .about-content ul strong {
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  .dark .about-content ul strong {
+    color: #e8e4de;
+  }
+
+  .font-heading { font-family: var(--font-display); }
 }
 
 @layer components {
   /* Navigation link */
   .nav-link {
-    @apply text-white/80 hover:text-white transition-colors duration-150 text-sm font-medium px-3 py-2 rounded-md hover:bg-white/10;
+    @apply text-sm font-medium px-3 py-2 rounded-md transition-colors duration-150;
+    color: rgba(240, 236, 230, 0.55);
+    letter-spacing: 0.02em;
+  }
+  .nav-link:hover {
+    color: #f0ece6;
+    background: rgba(255, 255, 255, 0.08);
   }
 
-  /* Card */
-  .card {
-    @apply bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 p-6 shadow-sm hover:shadow-md transition-shadow duration-200;
+  /* Section heading — editorial style */
+  .section-label {
+    @apply flex items-center gap-4 mb-8;
   }
-
-  /* Buttons */
-  .btn-primary {
-    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-light transition-colors duration-200 shadow-sm;
+  .section-label-kanji {
+    font-family: var(--font-display);
+    @apply text-2xl font-bold whitespace-nowrap;
+    color: var(--color-primary);
+    letter-spacing: 0.04em;
   }
-
-  .btn-outline {
-    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border-2 border-primary dark:border-primary-light text-primary dark:text-primary-light font-semibold text-sm hover:bg-primary dark:hover:bg-primary-light hover:text-white transition-colors duration-200;
+  .dark .section-label-kanji {
+    color: #e8e4de;
   }
-
-  /* Section heading */
-  .section-heading {
-    @apply text-2xl font-bold text-gray-900 dark:text-slate-100 border-b-2 border-accent pb-2 mb-6;
+  .section-label-line {
+    @apply flex-1 h-px;
+    background: #e5e0d8;
+  }
+  .dark .section-label-line {
+    background: #2a2a3a;
+  }
+  .section-label-en {
+    font-family: var(--font-mono);
+    @apply text-xs whitespace-nowrap uppercase;
+    color: #7a7a8a;
+    letter-spacing: 0.12em;
+    font-size: 0.65rem;
   }
 
   /* Tag/badge */
   .tag {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 dark:bg-primary-light/20 text-primary dark:text-primary-light;
+    @apply inline-flex items-center px-3 py-1 text-xs font-medium transition-all duration-150;
+    background: rgba(184, 148, 62, 0.10);
+    color: #8a7230;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    letter-spacing: 0.01em;
+  }
+  .tag:hover {
+    border-color: var(--color-accent);
+    background: rgba(184, 148, 62, 0.12);
+  }
+  .dark .tag {
+    background: rgba(212, 176, 98, 0.12);
+    color: #d4b062;
+  }
+  .dark .tag:hover {
+    border-color: var(--color-accent-light);
+  }
+
+  /* Publication action buttons */
+  .pub-btn {
+    @apply inline-flex items-center gap-1 text-xs font-medium transition-all duration-150;
+    font-family: var(--font-mono);
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.7rem;
+  }
+  .pub-btn:hover {
+    filter: brightness(0.95);
+  }
+  .pub-btn-pdf {
+    background: #fef2f2;
+    color: #b91c1c;
+  }
+  .dark .pub-btn-pdf {
+    background: rgba(185, 28, 28, 0.12);
+    color: #f87171;
+  }
+  .pub-btn-cite {
+    background: #eff6ff;
+    color: #1d4ed8;
+  }
+  .dark .pub-btn-cite {
+    background: rgba(29, 78, 216, 0.12);
+    color: #60a5fa;
+  }
+  .pub-btn-doi {
+    background: #f0fdf4;
+    color: #15803d;
+  }
+  .dark .pub-btn-doi {
+    background: rgba(21, 128, 61, 0.12);
+    color: #4ade80;
+  }
+  .pub-btn-link {
+    background: rgba(184, 148, 62, 0.10);
+    color: #4a4a5a;
+  }
+  .dark .pub-btn-link {
+    background: rgba(212, 176, 98, 0.12);
+    color: #a8a4a0;
+  }
+  .pub-btn-slides {
+    background: #faf5ff;
+    color: #7e22ce;
+  }
+  .dark .pub-btn-slides {
+    background: rgba(126, 34, 206, 0.12);
+    color: #c084fc;
+  }
+
+  /* View all link */
+  .view-all-link {
+    @apply inline-flex items-center gap-2 text-sm font-medium mt-6 transition-all duration-200;
+    color: var(--color-accent);
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+  }
+  .view-all-link:hover {
+    background: rgba(184, 148, 62, 0.12);
+    color: var(--color-accent-light);
+  }
+  .view-all-link svg {
+    @apply w-3.5 h-3.5 transition-transform duration-200;
+  }
+  .view-all-link:hover svg {
+    transform: translateX(3px);
+  }
+
+  /* Buttons (kept for BibTeX modal) */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors duration-200 shadow-sm;
+    background: var(--color-accent);
+    color: white;
+  }
+  .btn-primary:hover {
+    background: var(--color-accent-light);
+    color: white;
   }
 }

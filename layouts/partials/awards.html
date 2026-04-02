@@ -3,10 +3,10 @@
 <ul class="space-y-3">
   {{ range . }}
   <li class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-    <time class="text-xs text-gray-500 dark:text-slate-500 font-mono flex-shrink-0">{{ dateFormat "2006-01" .date }}</time>
+    <time class="flex-shrink-0 text-muted" style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.02em;">{{ dateFormat "2006-01" .date }}</time>
     <div>
-      <p class="text-sm font-medium text-gray-900 dark:text-slate-100">{{ .title }}</p>
-      <p class="text-xs text-gray-500 dark:text-slate-400">{{ .awarder }}</p>
+      <p class="text-sm font-medium text-ink">{{ .title }}</p>
+      <p class="text-xs text-muted">{{ .awarder }}</p>
     </div>
   </li>
   {{ end }}

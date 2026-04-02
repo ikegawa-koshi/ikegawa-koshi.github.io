@@ -9,25 +9,22 @@
   {{ $number = replaceRE `^\[(.+?)\]\s*(.+)$` "$1" $title }}
   {{ $name = replaceRE `^\[(.+?)\]\s*(.+)$` "$2" $title }}
 {{ end }}
-<li class="py-4">
-  <div class="flex flex-col sm:flex-row sm:items-start gap-3">
-    <div class="flex-1 min-w-0">
-      <div class="flex items-center gap-2 mb-1">
-        {{ with $number }}
-        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-semibold bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800">{{ . }}</span>
-        {{ end }}
-        <time class="text-xs text-gray-500 dark:text-slate-500 font-mono">{{ (time $item.date).Format "2006-01-02" }} 出願</time>
-      </div>
-      <p class="font-semibold text-gray-900 dark:text-slate-100 text-sm leading-snug">{{ $name }}</p>
-      <p class="text-xs text-gray-500 dark:text-slate-400 mt-1">{{ $item.authors }}</p>
-    </div>
-    <div class="flex flex-wrap items-center gap-2 sm:flex-shrink-0">
-      {{ range $item.links }}
-      <a href="{{ .url }}" target="_blank" rel="noopener"
-         class="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-medium bg-gray-50 dark:bg-slate-700 text-gray-700 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors">
-        {{ partial "icons/external-link.html" }} {{ .name }}
-      </a>
-      {{ end }}
-    </div>
+<li class="py-5 border-b border-divider last:border-b-0">
+  <div class="flex items-center gap-3 mb-1.5">
+    {{ with $number }}
+    <span style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500; color: #b8943e; padding: 0.15rem 0.5rem; background: rgba(184,148,62,0.10); border-radius: 2px; letter-spacing: 0.02em;">{{ . }}</span>
+    {{ end }}
+    <time class="text-muted" style="font-family: var(--font-mono); font-size: 0.7rem;">{{ (time $item.date).Format "2006-01-02" }} 出願</time>
   </div>
+  <p class="font-semibold text-sm leading-snug text-ink">{{ $name }}</p>
+  <p class="text-xs mt-1 text-muted">{{ $item.authors }}</p>
+  {{ with $item.links }}
+  <div class="flex flex-wrap items-center gap-1.5 mt-2">
+    {{ range . }}
+    <a href="{{ .url }}" target="_blank" rel="noopener" class="pub-btn pub-btn-link">
+      {{ partial "icons/external-link.html" }} {{ .name }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
 </li>
