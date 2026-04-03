@@ -6,6 +6,7 @@ categories:
 
 speech:
   title: "審査有り国際会議発表"
+  title_en: "Peer-Reviewed Talks"
   items:
     - title: "Demo: Infrastructure for Managing, Sharing, and Utilizing Sensitive Data using Hyperledger Fabric Private Chaincode Running on Microsoft Azure"
       authors: "Koshi Ikegawa"
@@ -26,7 +27,8 @@ speech:
       slides: "https://speakerdeck.com/ikegawa/trust-data-sharing-and-utilization-infrastructure-for-sensitive-data-using-hyperledger-avalon"
 
 speech_misc:
-  title: "その他 (Misc.)"
+  title: "その他"
+  title_en: "Misc."
   items:
     - title: "Hyperledger概要と技術課題"
       authors: "佐藤竜也, 池川航史, 長谷川学"
@@ -54,6 +56,7 @@ speech_misc:
 
 translation:
   title: "翻訳活動"
+  title_en: "Translations"
   items:
     - title: "Web3 and Sustainability [Web3とサステナビリティ]"
       authors: "Scott Chamberlin (Intel) [翻訳：池川航史・西島直（日立製作所）、平山毅（日本IBM）]"

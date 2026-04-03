@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="24" fill="#1a1a2e"/>
+  <!-- Blocks connected by hash arrows -->
+  <rect x="18" y="28" width="28" height="28" rx="4" fill="#b8943e"/>
+  <rect x="50" y="50" width="28" height="28" rx="4" fill="#b8943e" opacity="0.75"/>
+  <rect x="82" y="72" width="28" height="28" rx="4" fill="#b8943e" opacity="0.5"/>
+  <!-- Hash lines between blocks -->
+  <path d="M46,42 L50,50" stroke="#f0ece6" stroke-width="1.5" opacity="0.4"/>
+  <path d="M78,64 L82,72" stroke="#f0ece6" stroke-width="1.5" opacity="0.3"/>
+  <!-- Hash text decoration inside blocks -->
+  <line x1="23" y1="36" x2="41" y2="36" stroke="#1a1a2e" stroke-width="1.5" opacity="0.4"/>
+  <line x1="23" y1="40" x2="37" y2="40" stroke="#1a1a2e" stroke-width="1.5" opacity="0.4"/>
+  <line x1="23" y1="44" x2="41" y2="44" stroke="#1a1a2e" stroke-width="1.5" opacity="0.4"/>
+  <line x1="23" y1="48" x2="33" y2="48" stroke="#1a1a2e" stroke-width="1.5" opacity="0.4"/>
+  <line x1="55" y1="58" x2="73" y2="58" stroke="#1a1a2e" stroke-width="1.5" opacity="0.3"/>
+  <line x1="55" y1="62" x2="69" y2="62" stroke="#1a1a2e" stroke-width="1.5" opacity="0.3"/>
+  <line x1="55" y1="66" x2="73" y2="66" stroke="#1a1a2e" stroke-width="1.5" opacity="0.3"/>
+  <line x1="55" y1="70" x2="65" y2="70" stroke="#1a1a2e" stroke-width="1.5" opacity="0.3"/>
+</svg>

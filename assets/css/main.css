@@ -145,6 +145,14 @@
     font-size: 0.65rem;
   }
 
+  /* Page-level heading — larger variant */
+  .section-label-page .section-label-kanji {
+    @apply text-3xl;
+  }
+  .section-label-page .section-label-en {
+    font-size: 0.75rem;
+  }
+
   /* Tag/badge */
   .tag {
     @apply inline-flex items-center px-3 py-1 text-xs font-medium transition-all duration-150;

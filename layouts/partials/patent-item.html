@@ -1,5 +1,4 @@
 {{/* Patent item partial */}}
-{{/* Usage: {{ partial "patent-item.html" . }} */}}
 {{ $item := . }}
 {{ $title := $item.title }}
 {{ $number := "" }}
@@ -10,21 +9,21 @@
   {{ $name = replaceRE `^\[(.+?)\]\s*(.+)$` "$2" $title }}
 {{ end }}
 <li class="py-5 border-b border-divider last:border-b-0">
-  <div class="flex items-center gap-3 mb-1.5">
-    {{ with $number }}
-    <span style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500; color: #b8943e; padding: 0.15rem 0.5rem; background: rgba(184,148,62,0.10); border-radius: 2px; letter-spacing: 0.02em;">{{ . }}</span>
-    {{ end }}
-    <time class="text-muted" style="font-family: var(--font-mono); font-size: 0.7rem;">{{ (time $item.date).Format "2006-01-02" }} 出願</time>
+  <div class="grid gap-0" style="grid-template-columns: 3rem 1fr;">
+    <span class="pt-0.5 text-muted" style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.02em;">
+      {{ (time $item.date).Format "2006" }}
+    </span>
+    <div class="text-body" style="font-size: 0.88rem; line-height: 1.7;">
+      {{ with $number }}<span class="font-semibold text-ink">{{ . }}</span>. {{ end }}{{ with $item.authors }}{{ . }}.{{ end }}
+      <span class="font-semibold text-ink">{{ $name }}</span>.
+
+      <div class="flex flex-wrap items-center gap-1.5 mt-2">
+        {{ range $item.links }}
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="pub-btn pub-btn-link">
+          {{ partial "icons/external-link.html" }} {{ .name }}
+        </a>
+        {{ end }}
+      </div>
+    </div>
   </div>
-  <p class="font-semibold text-sm leading-snug text-ink">{{ $name }}</p>
-  <p class="text-xs mt-1 text-muted">{{ $item.authors }}</p>
-  {{ with $item.links }}
-  <div class="flex flex-wrap items-center gap-1.5 mt-2">
-    {{ range . }}
-    <a href="{{ .url }}" target="_blank" rel="noopener" class="pub-btn pub-btn-link">
-      {{ partial "icons/external-link.html" }} {{ .name }}
-    </a>
-    {{ end }}
-  </div>
-  {{ end }}
 </li>

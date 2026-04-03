@@ -1,6 +1,10 @@
 {{ define "main" }}
 <div class="max-w-[960px] mx-auto px-6 py-16 space-y-12">
-  <h1 class="font-heading text-ink" style="font-size: 2rem; font-weight: 700; letter-spacing: 0.02em;">OSS貢献</h1>
+  <div class="section-label section-label-page">
+    <span class="section-label-kanji">OSS貢献</span>
+    <span class="section-label-line"></span>
+    <span class="section-label-en">Open Source</span>
+  </div>
 
   {{ $oss := .Site.Data.oss }}
   {{ $globalIdx := 0 }}
@@ -11,6 +15,7 @@
       <div class="section-label">
         <span class="section-label-kanji">{{ .title }}</span>
         <span class="section-label-line"></span>
+        {{ with .title_en }}<span class="section-label-en">{{ . }}</span>{{ end }}
       </div>
       <ul class="list-none">
         {{ range .items }}

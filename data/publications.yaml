@@ -9,7 +9,8 @@ categories:
   - thesis
 
 journal:
-  title: "学術誌論文 (Journal Articles)"
+  title: "学術誌論文"
+  title_en: "Journal Articles"
   items:
     - title: "分散台帳を用いた複数組織による機密情報の共同管理および利活用システムの検討"
       authors: "池川航史"
@@ -36,7 +37,7 @@ journal:
 
     - title: "ブロックチェーンを用いた信頼ある機密データの管理および利活用基盤"
       authors: "池川航史, 西島直"
-      publication: "電子情報通信学会論文誌D"
+      publication: "電子情報通信学会論文誌D, Vol.J105-D, No.11, pp.653-656"
       date: "2022-11-01"
       pdf: "/pdf/journal_2022-ieice-d.pdf"
       bib: "/bib/journal_2022-ieice-d.bib"
@@ -44,9 +45,14 @@ journal:
       bibtex: |
         @article{ikegawa2022,
           author  = {池川, 航史 and 西島, 直},
-          journal = {電子情報通信学会論文誌D},
           title   = {ブロックチェーンを用いた信頼ある機密データの管理および利活用基盤},
+          journal = {電子情報通信学会論文誌D},
+          volume  = {J105-D},
+          number  = {11},
+          pages   = {653--656},
           year    = {2022},
+          month   = nov,
+          issn    = {1881-0225},
           doi     = {10.14923/transinfj.2021SGL0001}
         }
 
@@ -70,7 +76,8 @@ journal:
         }
 
 proceedings:
-  title: "国際会議論文 (Conference Papers)"
+  title: "国際会議論文"
+  title_en: "Conference Papers"
   items:
     - title: "Design and Evaluation of a Self-Sovereign Identity System with a Custodial Wallet"
       authors: "Koshi Ikegawa, Tatsuya Sato"
@@ -120,7 +127,8 @@ proceedings:
         }
 
 poster:
-  title: "国際会議ポスター予稿 (Conference Posters)"
+  title: "国際会議ポスター予稿"
+  title_en: "Conference Posters"
   items:
     - title: "Investigation of Touch Interfaces Using Multilayered Urushi Circuit"
       authors: "Koshi Ikegawa, Shuhei Aoyama, Shogo Tsuchikiri, Takuto Nakamura, Yuki Hashimoto, Buntarou Shizuki"
@@ -165,7 +173,8 @@ poster:
         }
 
 jproc:
-  title: "日本国内会議論文 (Japanese Conference Papers)"
+  title: "日本国内会議論文"
+  title_en: "Japanese Conference Papers"
   items:
     - title: "日本語フリック入力を用いたモバイル端末の把持姿勢識別"
       authors: "永井美波, 池川航史, 志築文太郎, 高橋伸"
@@ -174,7 +183,8 @@ jproc:
       pdf: "/pdf/jproc_2017_wiss_nagai.pdf"
 
 misc_intl:
-  title: "その他 国際発表 (Misc. International)"
+  title: "その他 国際発表"
+  title_en: "Misc. International"
   items:
     - title: "Capacitance- and Phase-Based Detection Technique of Finger Bend and Touched Hand Using Ring-Shaped Device"
       authors: "Minto Funakoshi, Koshi Ikegawa, Buntarou Shizuki"
@@ -192,7 +202,8 @@ misc_intl:
       date: "2017-05-01"
 
 misc_domestic:
-  title: "その他 国内発表 (Misc. Domestic)"
+  title: "その他 国内発表"
+  title_en: "Misc. Domestic"
   items:
     - title: "Secure and Traceable System for Genomic Data Sharing Using Hyperledger Fabric Blockchain"
       authors: "Koshi Ikegawa, Nao Nishijima, Yoji Ozawa, Katsuhiro Fukunaka, Hironori Emaru, Masaru Hisada, Akihito Kaneko, Eiichi Araki, Ai Okada, Yuichi Shiraishi"
@@ -220,7 +231,8 @@ misc_domestic:
       date: "2015-03-01"
 
 thesis:
-  title: "学位論文 (Thesis)"
+  title: "学位論文"
+  title_en: "Thesis"
   items:
     - title: "ブロック構造物に対する磁気計測に基づく構造認識およびその3Dモデリングシステムへの応用"
       authors: "池川航史 [指導教員: 志築文太郎]"

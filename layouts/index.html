@@ -64,7 +64,7 @@
 <div class="max-w-[960px] mx-auto px-6">
 
   <!-- About -->
-  <section class="py-20 border-b border-divider">
+  <section class="py-20">
     <div class="section-label">
       <span class="section-label-kanji">自己紹介</span>
       <span class="section-label-line"></span>
@@ -77,7 +77,7 @@
 
   <!-- Interests -->
   {{ with $admin.Params.interests }}
-  <section class="py-20 border-b border-divider">
+  <section class="py-20">
     <div class="section-label">
       <span class="section-label-kanji">研究分野</span>
       <span class="section-label-line"></span>
@@ -102,14 +102,14 @@
     {{ end }}
   {{ end }}
   {{ $sorted := sort $allItems "date" "desc" }}
-  <section class="py-20 border-b border-divider">
+  <section class="py-20">
     <div class="section-label">
       <span class="section-label-kanji">文献</span>
       <span class="section-label-line"></span>
       <span class="section-label-en">Publications</span>
     </div>
     <ul class="list-none">
-      {{ range $idx, $item := first 5 $sorted }}
+      {{ range $idx, $item := first 3 $sorted }}
         {{ partial "citation-item.html" (dict "item" $item "index" $idx) }}
       {{ end }}
     </ul>
@@ -121,7 +121,7 @@
 
   <!-- Patents -->
   {{ with .Site.Data.patents }}
-  <section class="py-20 border-b border-divider">
+  <section class="py-20">
     <div class="section-label">
       <span class="section-label-kanji">特許</span>
       <span class="section-label-line"></span>
@@ -141,7 +141,7 @@
 
   <!-- Experience (Timeline) -->
   {{ with $admin.Params.work }}
-  <section class="py-20 border-b border-divider">
+  <section class="py-20">
     <div class="section-label">
       <span class="section-label-kanji">職歴</span>
       <span class="section-label-line"></span>
