@@ -9,10 +9,11 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
-  <!-- Fonts -->
+  <!-- Fonts (async load to avoid render-blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=IBM+Plex+Sans+JP:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=IBM+Plex+Sans+JP:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=IBM+Plex+Sans+JP:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
 
   <!-- Tailwind CSS -->
   {{ $css := resources.Get "css/main.css" | css.TailwindCSS (dict "minify" hugo.IsProduction) }}

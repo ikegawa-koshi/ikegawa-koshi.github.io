@@ -12,7 +12,7 @@
       <span class="font-semibold text-ink">{{ $item.title }}</span>.
       {{ with $item.publication }}<span class="italic">{{ . }}</span>, {{ end }}
       {{ with $item.date }}{{ (time .).Format "2006" }}.{{ end }}
-      {{ with $item.note }}<span class="font-semibold" style="font-size: 0.72rem; color: #b8943e; margin-left: 0.25rem;">({{ . }})</span>{{ end }}
+      {{ with $item.note }}<span class="font-semibold" style="font-size: 0.72rem; color: #8a6e2e; margin-left: 0.25rem;">({{ . }})</span>{{ end }}
       {{ with $item.degree }}<span class="tag ml-1">{{ . }}</span>{{ end }}
 
       <div class="flex flex-wrap items-center gap-1.5 mt-2">

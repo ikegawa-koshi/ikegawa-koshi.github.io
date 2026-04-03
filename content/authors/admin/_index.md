@@ -17,10 +17,13 @@ profiles:
     label: E-mail
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/ikegawa/
+    label: LinkedIn
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=3XknmyYAAAAJ&hl=ja
+    label: Google Scholar
   - icon: academicons/orcid
     url: https://orcid.org/0000-0001-9605-5951
+    label: ORCID
 
 interests:
   - サービスコンピューティング (Services Computing)
@@ -114,7 +117,7 @@ awards:
 Linux Foundation Decentralized Trust（旧Hyperledger）をはじめとするOSSコミュニティへの貢献として、
 ソフトウェアパッチの提供、技術文書の翻訳、国際カンファレンスでの登壇発表を行っている。
 
-### 所属
+## 所属
 
 - **株式会社日立製作所** 研究開発グループ デジタルサービスイノベーションセンタ サービスコンピューティング研究部
 - **筑波大学** 大学院 理工情報生命学術院 システム情報工学研究群 リスク・レジリエンス工学学位プログラム（博士後期課程）在学中

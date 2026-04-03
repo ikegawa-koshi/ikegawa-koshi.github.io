@@ -28,7 +28,7 @@
           <a href="{{ .url }}" target="_blank" rel="noopener"
              class="flex items-center justify-center w-9 h-9 rounded-lg transition-all duration-200"
              style="color: rgba(240,236,230,0.55); border: 1px solid rgba(255,255,255,0.1);"
-             title="{{ .label }}">
+             title="{{ .label }}" aria-label="{{ .label }}">
             {{ if eq .icon "at-symbol" }}
             <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"/></svg>
             {{ else if eq .icon "brands/linkedin" }}
@@ -51,6 +51,7 @@
           <div class="absolute -inset-2 rounded-full" style="border: 1px solid rgba(184,148,62,0.3);"></div>
           <div class="absolute -inset-[18px] rounded-full" style="border: 1px solid rgba(184,148,62,0.1);"></div>
           <img src="{{ .RelPermalink }}" alt="Profile photo"
+               fetchpriority="high"
                class="w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] rounded-full object-cover"
                style="border: 3px solid rgba(212,176,98,0.25); filter: grayscale(15%) contrast(1.05);">
         </div>
