@@ -1,0 +1,22 @@
+{{/* Committees partial */}}
+{{/* Usage: {{ partial "committees.html" $admin.Params.committees }} */}}
+{{ $dateFmt := "2006.01" }}
+<div class="space-y-6">
+  {{ range . }}
+  <div class="pl-4" style="border-left: 2px solid #b8943e;">
+    <p class="font-semibold text-ink" style="font-size: 0.92rem;">{{ .organization }}</p>
+    <p class="mt-0.5 text-accent-sub" style="font-size: 0.82rem;">{{ .committee }}</p>
+    <div class="mt-3 space-y-1.5">
+      {{ range .roles }}
+      <div class="flex items-baseline gap-4">
+        <span class="text-sm text-body" style="font-size: 0.85rem;">{{ .title }}</span>
+        <span class="text-muted" style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.02em;">
+          {{ (time .date_start).Format $dateFmt }} &ndash;
+          {{ if .date_end }}{{ (time .date_end).Format $dateFmt }}{{ else }}現在{{ end }}
+        </span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>

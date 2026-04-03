@@ -91,6 +91,20 @@ work:
     date_start: 2019-04-01
     date_end: 2021-06-01
 
+committees:
+  - organization: 電子情報通信学会 サービスコンピューティング研究会
+    committee: 専門委員会
+    roles:
+      - title: 幹事
+        date_start: 2024-06-01
+        date_end: ''
+      - title: 幹事補佐
+        date_start: 2023-06-01
+        date_end: 2024-06-01
+      - title: 委員
+        date_start: 2023-06-01
+        date_end: ''
+
 awards:
   - title: Hyperledger Foundation Hyperledger Foundation’s 2023 Community Recognitions
     date: 2024-02-14

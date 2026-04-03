@@ -32,16 +32,16 @@
   {{ end }}
 
   <!-- Committee -->
+  {{ with $admin.Params.committees }}
   <section>
     <div class="section-label">
       <span class="section-label-kanji">委員歴</span>
       <span class="section-label-line"></span>
       <span class="section-label-en">Committee</span>
     </div>
-    <div class="prose prose-sm dark:prose-invert max-w-none text-body" style="font-size: 0.92rem;">
-      {{ .Content }}
-    </div>
+    {{ partial "committees.html" . }}
   </section>
+  {{ end }}
 
   <!-- Lectures -->
   {{ with $admin.Params.lectures }}
