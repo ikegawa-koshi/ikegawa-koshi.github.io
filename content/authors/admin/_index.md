@@ -27,21 +27,26 @@ interests:
   - Web3
   - ブロックチェーン (Blockchain)
   - 分散台帳技術 (DLT)
-  - 自己主権型アイデンティティ (SSI)
   - 金融 (Finance)
+  - 自己主権型アイデンティティ (SSI)
+  - Verifiable Credentials (VC)
+  - セキュリティ (Security)
+  - ネットワーク (Network)
+  - コンテナ (Container)
+  - クラウド (Cloud)
 
 education:
-  - area: 在学中
-    institution: 筑波大学 大学院 博士後期課程
+  - area: 博士後期課程 在学中
+    institution: 筑波大学 大学院 理工情報生命学術院 システム情報工学研究群 リスク・レジリエンス工学学位プログラム（博士後期課程）
     date_start: 2025-10-01
     date_end: 
     summary: 
   - area: 修士（工学）
-    institution: 筑波大学 大学院 博士前期課程
+    institution: 筑波大学 大学院 システム情報工学研究科 コンピュータサイエンス専攻（博士前期課程）
     date_start: 2017-04-01
     date_end: 2019-03-31
     summary: |
-      学位論文｜ブロック構造物に対する磁気計測に基づく構造認識およびその3Dモデリングシステムへの応用.
+      学位論文｜ブロック構造物に対する磁気計測に基づく構造認識およびその3Dモデリングシステムへの応用.  
       筑波大学 システム情報工学研究科 コンピュータサイエンス専攻, 2019年01月, 73 pages.
       （指導教員：志築文太郎）
   - area: 学士（情報メディア科学）
