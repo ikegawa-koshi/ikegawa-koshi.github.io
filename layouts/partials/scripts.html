@@ -65,89 +65,99 @@
   });
 
   // Network visualization (hero canvas, home page only)
+  // Deferred to avoid blocking main thread during page load
   var canvas = document.getElementById('network-canvas');
   if (canvas) {
-    var ctx = canvas.getContext('2d');
-    var nodes = [];
-    var nodeCount = 35;
+    (typeof requestIdleCallback === 'function' ? requestIdleCallback : setTimeout)(function() {
+      var ctx = canvas.getContext('2d');
+      var nodes = [];
+      var nodeCount = 20;
+      var cachedW = 0, cachedH = 0;
+      var maxDistSq = 140 * 140;
 
-    function resizeCanvas() {
-      var hero = canvas.parentElement;
-      canvas.width = hero.offsetWidth * window.devicePixelRatio;
-      canvas.height = hero.offsetHeight * window.devicePixelRatio;
-      canvas.style.width = hero.offsetWidth + 'px';
-      canvas.style.height = hero.offsetHeight + 'px';
-      ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
-    }
-
-    function initNodes() {
-      nodes = [];
-      var w = canvas.parentElement.offsetWidth;
-      var h = canvas.parentElement.offsetHeight;
-      for (var i = 0; i < nodeCount; i++) {
-        nodes.push({
-          x: Math.random() * w,
-          y: Math.random() * h,
-          vx: (Math.random() - 0.5) * 0.15,
-          vy: (Math.random() - 0.5) * 0.15,
-          r: 1.5 + Math.random() * 2
-        });
-      }
-    }
-
-    function drawNetwork() {
-      var w = canvas.parentElement.offsetWidth;
-      var h = canvas.parentElement.offsetHeight;
-      ctx.clearRect(0, 0, w, h);
-
-      var isDark = html.classList.contains('dark');
-      var dotColor = isDark ? 'rgba(212,176,98,0.35)' : 'rgba(184,148,62,0.25)';
-      var lineColor = isDark ? 'rgba(212,176,98,0.06)' : 'rgba(184,148,62,0.08)';
-      var maxDist = 140;
-
-      for (var i = 0; i < nodes.length; i++) {
-        var n = nodes[i];
-        n.x += n.vx;
-        n.y += n.vy;
-        if (n.x < 0 || n.x > w) n.vx *= -1;
-        if (n.y < 0 || n.y > h) n.vy *= -1;
+      function resizeCanvas() {
+        var hero = canvas.parentElement;
+        var w = hero.offsetWidth;
+        var h = hero.offsetHeight;
+        var dpr = window.devicePixelRatio;
+        cachedW = w;
+        cachedH = h;
+        canvas.width = w * dpr;
+        canvas.height = h * dpr;
+        canvas.style.width = w + 'px';
+        canvas.style.height = h + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       }
 
-      ctx.strokeStyle = lineColor;
-      ctx.lineWidth = 0.5;
-      for (var i = 0; i < nodes.length; i++) {
-        for (var j = i + 1; j < nodes.length; j++) {
-          var dx = nodes[i].x - nodes[j].x;
-          var dy = nodes[i].y - nodes[j].y;
-          var dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < maxDist) {
-            ctx.globalAlpha = 1 - dist / maxDist;
-            ctx.beginPath();
-            ctx.moveTo(nodes[i].x, nodes[i].y);
-            ctx.lineTo(nodes[j].x, nodes[j].y);
-            ctx.stroke();
-          }
+      function initNodes() {
+        nodes = [];
+        for (var i = 0; i < nodeCount; i++) {
+          nodes.push({
+            x: Math.random() * cachedW,
+            y: Math.random() * cachedH,
+            vx: (Math.random() - 0.5) * 0.15,
+            vy: (Math.random() - 0.5) * 0.15,
+            r: 1.5 + Math.random() * 2
+          });
         }
       }
-      ctx.globalAlpha = 1;
 
-      ctx.fillStyle = dotColor;
-      for (var i = 0; i < nodes.length; i++) {
-        ctx.beginPath();
-        ctx.arc(nodes[i].x, nodes[i].y, nodes[i].r, 0, Math.PI * 2);
-        ctx.fill();
+      function drawNetwork() {
+        var w = cachedW, h = cachedH;
+        ctx.clearRect(0, 0, w, h);
+
+        var isDark = html.classList.contains('dark');
+        var dotColor = isDark ? 'rgba(212,176,98,0.35)' : 'rgba(184,148,62,0.25)';
+        var lineColor = isDark ? 'rgba(212,176,98,0.06)' : 'rgba(184,148,62,0.08)';
+
+        for (var i = 0; i < nodes.length; i++) {
+          var n = nodes[i];
+          n.x += n.vx;
+          n.y += n.vy;
+          if (n.x < 0 || n.x > w) n.vx *= -1;
+          if (n.y < 0 || n.y > h) n.vy *= -1;
+        }
+
+        ctx.strokeStyle = lineColor;
+        ctx.lineWidth = 0.5;
+        for (var i = 0; i < nodes.length; i++) {
+          for (var j = i + 1; j < nodes.length; j++) {
+            var dx = nodes[i].x - nodes[j].x;
+            var dy = nodes[i].y - nodes[j].y;
+            var distSq = dx * dx + dy * dy;
+            if (distSq < maxDistSq) {
+              ctx.globalAlpha = 1 - Math.sqrt(distSq) / 140;
+              ctx.beginPath();
+              ctx.moveTo(nodes[i].x, nodes[i].y);
+              ctx.lineTo(nodes[j].x, nodes[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+        ctx.globalAlpha = 1;
+
+        ctx.fillStyle = dotColor;
+        for (var i = 0; i < nodes.length; i++) {
+          ctx.beginPath();
+          ctx.arc(nodes[i].x, nodes[i].y, nodes[i].r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        requestAnimationFrame(drawNetwork);
       }
 
-      requestAnimationFrame(drawNetwork);
-    }
-
-    resizeCanvas();
-    initNodes();
-    drawNetwork();
-
-    window.addEventListener('resize', function() {
       resizeCanvas();
       initNodes();
+      drawNetwork();
+
+      var resizeTimer;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          resizeCanvas();
+          initNodes();
+        }, 150);
+      });
     });
   }
 </script>
