@@ -6,15 +6,14 @@
   <div class="pl-4" style="border-left: 2px solid #b8943e;">
     <p class="font-semibold text-ink" style="font-size: 0.92rem;">{{ .organization }}</p>
     <p class="mt-0.5 text-accent-sub" style="font-size: 0.82rem;">{{ .committee }}</p>
-    <div class="mt-3 space-y-1.5">
+    <div class="mt-3 pl-4" style="display: grid; grid-template-columns: max-content max-content max-content; column-gap: 0.75rem; row-gap: 0.4rem; align-items: baseline;">
       {{ range .roles }}
-      <div class="flex items-baseline gap-4">
-        <span class="text-sm text-body" style="font-size: 0.85rem;">{{ .title }}</span>
-        <span class="text-muted" style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.02em;">
-          {{ (time .date_start).Format $dateFmt }} &ndash;
-          {{ if .date_end }}{{ (time .date_end).Format $dateFmt }}{{ else }}現在{{ end }}
-        </span>
-      </div>
+      <span class="text-body" style="font-size: 0.85rem;">{{ .title }}</span>
+      <span class="text-muted" style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.02em; opacity: 0.6;">・・・</span>
+      <span class="text-muted whitespace-nowrap" style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.02em;">
+        {{ (time .date_start).Format $dateFmt }} &ndash;
+        {{ if .date_end }}{{ (time .date_end).Format $dateFmt }}{{ else }}現在{{ end }}
+      </span>
       {{ end }}
     </div>
   </div>

@@ -70,26 +70,22 @@ education:
       （指導教員：川上由紀）
 
 work:
-  - position: 研究員 / Senior Researcher
-    company_name: 株式会社日立製作所 研究開発グループ
+  - company_name: 株式会社日立製作所
+    department: 研究開発グループ
     company_url: 'https://www.hitachi.co.jp/rd/'
-    date_start: 2024-06-01
-    date_end: ''
-  - position: 研究員 / Researcher
-    company_name: 株式会社日立製作所 研究開発グループ
-    company_url: 'https://www.hitachi.co.jp/rd/'
-    date_start: 2023-04-01
-    date_end: 2024-06-01
-  - position: 企画員 / Associate Researcher
-    company_name: 株式会社日立製作所 研究開発グループ
-    company_url: 'https://www.hitachi.co.jp/rd/'
-    date_start: 2021-06-01
-    date_end: 2023-04-01
-  - position: 研修員 / Trainee
-    company_name: 株式会社日立製作所 研究開発グループ
-    company_url: 'https://www.hitachi.co.jp/rd/'
-    date_start: 2019-04-01
-    date_end: 2021-06-01
+    roles:
+      - position: 研究員 / Senior Researcher
+        date_start: 2024-06-01
+        date_end: ''
+      - position: 研究員 / Researcher
+        date_start: 2023-04-01
+        date_end: 2024-06-01
+      - position: 企画員 / Associate Researcher
+        date_start: 2021-06-01
+        date_end: 2023-04-01
+      - position: 研修員 / Trainee
+        date_start: 2019-04-01
+        date_end: 2021-06-01
 
 committees:
   - organization: 電子情報通信学会 サービスコンピューティング研究会
