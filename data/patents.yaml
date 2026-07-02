@@ -3,42 +3,47 @@ items:
   - title: "[特開2026-020966] データ管理システム、サービスシステム、及びデータ管理方法"
     authors: "池川航史"
     date: "2024-07-29"
+    summary: "自己主権型アイデンティティ（SSI）において、検証者によるレジストリ参照の利用状況をクライアント間の復号鍵のやり取りから把握し、検証対象を秘匿したまま参照アクセスに応じた課金額を算出する。"
     links:
       - name: "Google Patents"
         url: "https://patents.google.com/patent/JP2026020966A"
       - name: "J-PlatPat"
         url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2026-020966/11/ja"
 
-  - title: "[特開2024-125090] 分散台帳データ管理システム及びデータ管理方法"
+  - title: "[特許7836274] 分散台帳データ管理システム及びデータ管理方法"
     authors: "池川航史, 西島直"
     date: "2023-03-03"
+    summary: "秘密計算を用いて組織のウォレット秘密鍵を暗号化したまま管理し、特定の利用者に権限を集中させずに分散台帳上の鍵を安全に運用できるようにする。"
     links:
       - name: "Google Patents"
         url: "https://patents.google.com/patent/JP2024125090A"
       - name: "J-PlatPat"
-        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2024-125090/11/ja"
+        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-7836274/15/ja"
 
-  - title: "[特開2023-168952] データ管理システム及びデータ管理方法"
+  - title: "[特許7847034] データ管理システム及びデータ管理方法"
     authors: "池川航史"
-    date: "2023-05-16"
+    date: "2022-05-16"
+    summary: "分散台帳に参加する組織間のデータ利活用を管理する仕組みで、ある組織のノードが暗号化したデータを他組織のノードへ渡し、受領側が暗号化領域内で復号と指定処理を実行する。"
     links:
       - name: "Google Patents"
         url: "https://patents.google.com/patent/JP2023168952A"
       - name: "J-PlatPat"
-        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2023-168952/11/ja"
+        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-7847034/15/ja"
 
   - title: "[特許7590925] 機微データ管理システムおよび機微データ管理方法"
     authors: "池川航史, 西島直, 小澤洋司"
     date: "2021-05-31"
+    summary: "機微データを提供者の意図に沿って検証可能かつ適正に管理する分散台帳システム。メタデータを台帳に、実データをプライベートストレージに保持し、スマートコントラクトによる利用申請・承認と処理ログで安全性と透明性を確保する。"
     links:
       - name: "Google Patents"
         url: "https://patents.google.com/patent/JP2022183596A"
       - name: "J-PlatPat"
-        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2022-183596/11/ja"
+        url: "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-7590925/15/ja"
 
   - title: "[特許7408499] 分散台帳管理システム、分散台帳管理方法、およびノード"
     authors: "池川航史, 西島直, 小澤洋司"
     date: "2020-07-06"
+    summary: "トランザクションの型式を問わずシステム全体のデータ総量を削減する分散台帳管理方式。ピアノードが受領したブロックと検証結果を状態データベース更新後に破棄できるようにする。"
     links:
       - name: "Google Patents"
         url: "https://patents.google.com/patent/JP2022014369A"

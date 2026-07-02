@@ -17,6 +17,10 @@
       {{ with $number }}<span class="font-semibold text-ink">{{ . }}</span>. {{ end }}{{ with $item.authors }}{{ . }}.{{ end }}
       <span class="font-semibold text-ink">{{ $name }}</span>.
 
+      {{ with $item.summary }}
+      <p class="text-muted mt-1.5" style="font-size: 0.82rem; line-height: 1.7;">{{ . }}</p>
+      {{ end }}
+
       <div class="flex flex-wrap items-center gap-1.5 mt-2">
         {{ range $item.links }}
         <a href="{{ .url }}" target="_blank" rel="noopener" class="pub-btn pub-btn-link">
