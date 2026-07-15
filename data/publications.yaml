@@ -24,7 +24,7 @@ journal:
         - name: "Web"
           url: "https://www.ipsj.or.jp/dp/contents/publication/61/TR0601-14.html"
       bibtex: |
-        @article{ikegawa2025,
+        @article{ikegawa2025ipsj,
           author  = {池川, 航史},
           issue   = {1},
           journal = {情報処理学会論文誌デジタルプラクティス（TDP）},
@@ -43,7 +43,7 @@ journal:
       bib: "/bib/journal_2022-ieice-d.bib"
       doi: "10.14923/transinfj.2021SGL0001"
       bibtex: |
-        @article{ikegawa2022,
+        @article{ikegawa2022ieice,
           author  = {池川, 航史 and 西島, 直},
           title   = {ブロックチェーンを用いた信頼ある機密データの管理および利活用基盤},
           journal = {電子情報通信学会論文誌D},
@@ -64,7 +64,7 @@ journal:
       bib: "/bib/journal_2017-jssst.bib"
       doi: "10.11309/jssst.34.2_93"
       bibtex: |
-        @article{yoshida2017,
+        @article{yoshida2017jssst,
           title={静電容量に基づくブロックシステム},
           author={吉田 有花 and 鶴田 真也 and 池川 航史 and 阿部 哲也 and 志築 文太郎 and 田中 二郎},
           journal={コンピュータ ソフトウェア},
@@ -81,9 +81,24 @@ proceedings:
   items:
     - title: "Design and Evaluation of a Self-Sovereign Identity System with a Custodial Wallet"
       authors: "Koshi Ikegawa, Tatsuya Sato"
-      publication: "2025 8th International Conference on Blockchain Technology and Applications (ICBTA 2025)"
+      publication: "Blockchain Technology and Applications (ICBTA 2025), Springer Nature Switzerland, pp.117-130"
       date: "2025-12-13"
       pdf: "/pdf/proc_2025_icbta.pdf"
+      doi: "10.1007/978-3-032-22088-2_8"
+      bibtex: |
+        @inproceedings{ikegawa2026icbta,
+          title = {Design and Evaluation of a Self-Sovereign Identity System with a Custodial Wallet},
+          author = {Ikegawa, Koshi and Sato, Tatsuya},
+          editor = {Li, Ruidong},
+          booktitle = {Blockchain Technology and Applications},
+          publisher = {Springer Nature Switzerland},
+          address = {Cham},
+          year = {2026},
+          pages = {117--130},
+          isbn = {978-3-032-22088-2},
+          doi = {10.1007/978-3-032-22088-2_8},
+          url = {https://doi.org/10.1007/978-3-032-22088-2_8}
+        }
 
     - title: "Tesla Blocks: Magnetism-Based Tangible 3D Modeling System using Block-Shaped Objects"
       authors: "Koshi Ikegawa, Buntarou Shizuki"
@@ -92,7 +107,7 @@ proceedings:
       pdf: "/pdf/proc_2018_ozchi.pdf"
       doi: "10.1145/3292147.3292221"
       bibtex: |
-        @inproceedings{Ikegawa_2018_OzCHI,
+        @inproceedings{ikegawa2018ozchi,
           series = {OzCHI '18},
           title = {Tesla blocks: magnetism-based tangible 3D modeling system using block-shaped objects},
           url = {http://dx.doi.org/10.1145/3292147.3292221},
@@ -113,7 +128,7 @@ proceedings:
       pdf: "/pdf/proc_2018_hcii.pdf"
       doi: "10.1007/978-3-319-92043-6_41"
       bibtex: |
-        @inbook{Ikegawa_2018_HCII,
+        @inbook{ikegawa2018hcii,
           title = {Investigating Effects of Users' Background in Analyzing Long-Term Images from a Stationary Camera},
           ISBN = {9783319920436},
           ISSN = {1611-3349},
@@ -137,7 +152,7 @@ poster:
       pdf: "/pdf/poster_2018_tei.pdf"
       doi: "10.1145/3173225.3173285"
       bibtex: |
-        @inproceedings{Ikegawa_2018_TEI,
+        @inproceedings{ikegawa2018tei,
           series = {TEI '18},
           title = {Investigation of Touch Interfaces Using Multilayered Urushi Circuit},
           url = {http://dx.doi.org/10.1145/3173225.3173285},
@@ -158,7 +173,7 @@ poster:
       pdf: "/pdf/poster_2016_iss.pdf"
       doi: "10.1145/2992154.2996772"
       bibtex: |
-        @inproceedings{Ikegawa_2016_ISS,
+        @inproceedings{ikegawa2016iss,
           series = {ISS '16},
           title = {Lightweight Capacitance-based Block System for 3D Space Interaction},
           url = {http://dx.doi.org/10.1145/2992154.2996772},
