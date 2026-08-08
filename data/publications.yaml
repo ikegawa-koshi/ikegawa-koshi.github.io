@@ -12,6 +12,23 @@ journal:
   title: "学術誌論文"
   title_en: "Journal Articles"
   items:
+    - title: "Predicting Saturation of Custodial Self-Sovereign Identity Agents on Kubernetes: A Scaling Model for Capacity Planning"
+      authors: "Koshi Ikegawa, Tatsuya Sato, Naoto Hoshikawa"
+      publication: "IEEE Access"
+      date: "2026-08-08"
+      note: "Early Access"
+      doi: "10.1109/ACCESS.2026.3721544"
+      bibtex: |
+        @article{ikegawa2026access,
+          author  = {Ikegawa, Koshi and Sato, Tatsuya and Hoshikawa, Naoto},
+          title   = {Predicting Saturation of Custodial Self-Sovereign Identity Agents on Kubernetes: A Scaling Model for Capacity Planning},
+          journal = {IEEE Access},
+          year    = {2026},
+          pages   = {1--1},
+          doi     = {10.1109/ACCESS.2026.3721544},
+          note    = {Early Access}
+        }
+
     - title: "分散台帳を用いた複数組織による機密情報の共同管理および利活用システムの検討"
       authors: "池川航史"
       publication: "情報処理学会論文誌デジタルプラクティス（TDP）, Vol.6, No.1, pp.87-98"
