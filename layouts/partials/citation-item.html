@@ -16,6 +16,18 @@
       {{ with $item.degree }}<span class="tag ml-1">{{ . }}</span>{{ end }}
 
       <div class="flex flex-wrap items-center gap-1.5 mt-2">
+        {{ with $item.doi }}
+        <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-btn pub-btn-doi">
+          {{ partial "icons/external-link.html" }} DOI
+        </a>
+        {{ end }}
+
+        {{ range $item.links }}
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="pub-btn pub-btn-link">
+          {{ partial "icons/external-link.html" }} {{ .name }}
+        </a>
+        {{ end }}
+
         {{ with $item.pdf }}
         <a href="{{ . }}" target="_blank" rel="noopener" class="pub-btn pub-btn-pdf">
           {{ partial "icons/download.html" }} PDF
@@ -42,18 +54,6 @@
             </button>
           </div>
         </div>
-        {{ end }}
-
-        {{ with $item.doi }}
-        <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-btn pub-btn-doi">
-          {{ partial "icons/external-link.html" }} DOI
-        </a>
-        {{ end }}
-
-        {{ range $item.links }}
-        <a href="{{ .url }}" target="_blank" rel="noopener" class="pub-btn pub-btn-link">
-          {{ partial "icons/external-link.html" }} {{ .name }}
-        </a>
         {{ end }}
 
         {{ with $item.slides }}
