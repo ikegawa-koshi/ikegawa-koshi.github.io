@@ -24,6 +24,9 @@ profiles:
   - icon: academicons/orcid
     url: https://orcid.org/0000-0001-9605-5951
     label: ORCID
+  - icon: researchmap
+    url: https://researchmap.jp/k6i
+    label: researchmap
 
 interests:
   - サービスコンピューティング (Services Computing)
@@ -53,7 +56,7 @@ education:
       筑波大学 システム情報工学研究科 コンピュータサイエンス専攻, 2019年01月, 73 pages.
       （指導教員：志築文太郎）
   - area: 学士（情報メディア科学）
-    institution: 筑波大学 情報学群
+    institution: 筑波大学 情報学群 情報メディア創成学類
     date_start: 2015-04-01
     date_end: 2017-03-31
     summary: |
@@ -61,7 +64,7 @@ education:
       筑波大学 情報学群 情報メディア創成学類, 2017年01月, 42 pages.
       （指導教員：志築文太郎）
   - area: 準学士（電子情報工学）
-    institution: 福井高専 電子情報工学科
+    institution: 福井工業高等専門学校 電子情報工学科
     date_start: 2010-04-01
     date_end: 2015-03-31
     summary: |
