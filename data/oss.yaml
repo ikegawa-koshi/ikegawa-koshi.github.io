@@ -64,7 +64,7 @@ translation:
       date: "2023-02-01"
       links:
         - name: "Link"
-          url: "https://www.linuxfoundation.jp/publications/2023/06/web3-and-sustainability-jp/"
+          url: "https://www.linuxfoundation.org/ja-jp/research/web3-and-sustainability-jp"
 
     - title: "NFTs and the Environment [NFTと環境]"
       authors: "Alan Majer (Good Robot) [翻訳：池川航史・伊藤哲・永井崇之（日立製作所）、浅沼岳樹（富士通）編集：谷口暢夫]"
@@ -72,4 +72,4 @@ translation:
       date: "2022-04-01"
       links:
         - name: "Link"
-          url: "https://www.linuxfoundation.jp/publications/2022/09/nft-carbon-footprint/"
+          url: "https://www.linuxfoundation.org/ja-jp/research/carbon-footprint-of-nfts-jp"
