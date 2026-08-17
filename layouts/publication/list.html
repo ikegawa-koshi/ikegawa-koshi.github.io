@@ -6,7 +6,7 @@
     <span class="section-label-en">Publications</span>
   </div>
 
-  {{ $pubs := .Site.Data.publications }}
+  {{ $pubs := hugo.Data.publications }}
   {{ $globalIdx := 0 }}
 
   {{ range $catKey := $pubs.categories }}

@@ -6,7 +6,7 @@
     <span class="section-label-en">Patents</span>
   </div>
 
-  {{ with .Site.Data.patents }}
+  {{ with hugo.Data.patents }}
   <ul class="list-none">
     {{ range .items }}
       {{ partial "patent-item.html" . }}

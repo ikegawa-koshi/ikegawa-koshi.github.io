@@ -6,7 +6,7 @@
     <span class="section-label-en">Open Source</span>
   </div>
 
-  {{ $oss := .Site.Data.oss }}
+  {{ $oss := hugo.Data.oss }}
   {{ $globalIdx := 0 }}
 
   {{ range $catKey := $oss.categories }}

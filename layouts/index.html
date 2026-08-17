@@ -95,7 +95,7 @@
   {{ end }}
 
   <!-- Recent Publications -->
-  {{ $pubs := .Site.Data.publications }}
+  {{ $pubs := hugo.Data.publications }}
   {{ $allItems := slice }}
   {{ range $cat := $pubs.categories }}
     {{ with index $pubs $cat }}
@@ -123,7 +123,7 @@
   </section>
 
   <!-- Patents -->
-  {{ with .Site.Data.patents }}
+  {{ with hugo.Data.patents }}
   <section class="py-20">
     <div class="section-label">
       <span class="section-label-kanji">特許</span>
