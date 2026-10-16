@@ -18,10 +18,10 @@ speech:
       authors: "Koshi Ikegawa"
       publication: "Open Source Summit Japan 2021 (OSSJ 2021)"
       date: "2021-12-14"
-      slides: "https://speakerdeck.com/ikegawa/trust-data-sharing-and-utilization-infrastructure-for-sensitive-data-using-hyperledger-avalon"
+      slides: "https://speakerdeck.com/ikegawa/trust-data-sharing-and-utilization-infrastructure-for-sensitive-data-using-hyperledger-projects"
 
     - title: "Trust Data Sharing and Utilization Infrastructure for Sensitive Data using Hyperledger Avalon"
-      authors: "Koshi Ikegawa"
+      authors: "Koshi Ikegawa and Nao Nishijima"
       publication: "Hyperledger Global Forum 2021 (HLGF 2021)"
       date: "2021-06-08"
       slides: "https://speakerdeck.com/ikegawa/trust-data-sharing-and-utilization-infrastructure-for-sensitive-data-using-hyperledger-avalon"
