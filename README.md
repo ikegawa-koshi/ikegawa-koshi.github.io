@@ -6,7 +6,7 @@ https://ikegawa-koshi.github.io/
 
 ## 技術スタック
 
-- [Hugo](https://gohugo.io/) v0.165.0
+- [Hugo](https://gohugo.io/) v0.168.0
 - [Tailwind CSS](https://tailwindcss.com/) v4
 - GitHub Pages（GitHub Actions でデプロイ）
 
